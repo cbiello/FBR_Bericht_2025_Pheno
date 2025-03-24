@@ -1,0 +1,73 @@
+% -*- coding:utf-8 -*-
+% vi:encoding=utf-8:
+% !TEX encoding = UTF-8 Unicode
+%
+% This file should be utf8 encoded so that these characters render as
+% umlauts: ÄÖÜäöüß
+%
+%
+% FBR_Bericht_2025.tex
+%
+% Fachbeiratsbericht 2025
+% 
+% PHENO SECTION
+
+\documentclass{FBR_Bericht_2025}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\arabic{section}}
+
+\usepackage{physics}
+
+\usepackage[backend=biber,sorting=none]{biblatex}
+
+\addbibresource{Pheno.bib}
+
+\begin{document}
+
+\onecolumn
+\pdfbookmark[1]{Table of Contents}{table_of_contents}
+\tableofcontents
+\cleardoublepage
+
+\twocolumn
+
+% ----------------------------------------------------------------------
+\chapter{Research Activities -- Theory}
+% ----------------------------------------------------------------------
+\section{Novel computational techniques in particle physics and phenomenological applications}
+% ----------------------------------------------------------------------
+\begin{Namen}
+Director: Prof. Dr. G. Zanderighi
+\end{Namen}
+Introduction of the group.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection[Event generators]{Event generators}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{refsection}
+\subsubsection{QQ}
+\subsubsection{QQF}
+Example of citation~\cite{Biello:2024pgo}.
+\end{refsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection[Event generators]{Event generators}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{refsection}
+\subsubsection{QQ}
+\subsubsection{QQF}
+Example of citation~\cite{Biello:2024pgo}.
+\end{refsection}
+
+\cite{FerrarioRavasio:2024kem}
+
+% ----------------------------------------------------------------------
+\clearpage
+\onecolumn
+% ----------------------------------------------------------------------
+\end{document}
+% ----------------------------------------------------------------------

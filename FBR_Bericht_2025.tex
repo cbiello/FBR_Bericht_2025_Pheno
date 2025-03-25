@@ -71,11 +71,47 @@ several years. However, there has been a substantial progress in achieving next-
 group. The \minnlo{} method to match NNLO predictions with parton showers (NNLO+PS)
 was introduced by us in 2019 for $2\to 1$ colour-singlet 
 processes \cite{Monni2019:whf,MonniXXX}, generalized $2\to 2$ reactions 
-(and beyond) \cite{Lombardi:} and even extended to top-quark pair production \cite{Mazzitelli, Mazzitelli}. With the latter work \minnlo{} became the first 
+(and beyond) \cite{Lombardi:} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli, Mazzitelli}. With the latter work \minnlo{} became the first 
 (and still only) NNLO+PS method to deal with colour charges in initial and final state.
 %
 \subsubsection{NNLO+PS predictions for B-hadron and b-jet production}
-B-hadron and b-jet at NNLO+PS and b-jet algorithms
+Based on the previous advancements of the \minnlo{} method,
+we have implemented a new NNLO+PS generator for bottom-quark quark pair ($b\bar b$) production.
+To this end, the previous \minnlo{} implementation in POWHEG-BOX-V2 was ported 
+to the POWHEG-BOX-RES framework, and then extended to account for 
+general quark masses as well as different flavour-number schemes by implementing
+variable number of light quark flavours.
+
+
+\begin{table}[b!]
+\begin{center}
+\includegraphics[width=1\linewidth]{plots/bb_table.pdf}
+\caption{B-hadron cross sections in $\mu$b.}
+\label{tab:bb}
+\end{center}
+\end{table}
+
+The $b\bar b$ \minnlo{}  generator has been developed in \citere{Ratti:} and employed for 
+realistic predictions of B-hadron production in comparison to various LHC measurements.
+By and large, a remarkable description of the measured cross sections is achieved, 
+see \tab{tab:bb} for instance. We are currently finalizing a second study where we 
+consider $b$-jet observables using our $b\bar b$ \minnlo{} simulation as
+well as massless (and massive) NLO+PS dijet simulations. In this context, 
+algorithms to appropriately define the bottom flavour in jets play a crucial role, see
+\citere{Rhorryspaper} for instance, and we find that the by far dominant effect 
+of the difference with to the standard $b$-tagging algorithms used by the experiments
+stems from the treatment of $g\to b\bar b$ splittings.
+A preliminary comparison of our \minnlo{} predictions against ATLAS data is given in 
+\fig{fig:bb}.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/bjet_mbb.pdf}
+\caption{Invariant-mass distribution of leading $b$-jets for \minnlo{} (blue), \minlo{} (grey).}
+\label{fig:bb}
+\end{center}
+\end{figure}
+
 \begin{Namen}
 R. Gauld, J. Mazzitelli, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}

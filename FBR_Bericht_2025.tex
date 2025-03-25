@@ -47,27 +47,50 @@ Director: Prof. Dr. G. Zanderighi
 Introduction of the group.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection[Event generators at the LHC]{Event generators at the Large Hadron Collider}
+\subsection{Novel event simulations for the hadron--hadron collisions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{refsection}
-Section for predictions matched with parton shower in hadron-hadron colliders.
+Full fledged simulations of hadron-level events build the theoretical 
+core of any experimental analyses performed at colliders.
+By closing the gap between the measured data in the experimental
+detectors and the theoretical predictions based on quantum-field theory
+(QFT) computations, event generators are one of central tools developed
+in particle theory. In addition, their predictions provide a realistic description
+of any infrared-safe observable in comparison to data.
+
+To keep up with the steadily decreasing experimental uncertainties, it is 
+mandatory to develop event simulations at the highest possible accuracy.
+This can be achieved by improving the perturbative all-order description 
+of parton showers, on the one hand, and by including higher-order corrections
+in the event simulations. This will allows us ultimately to observe even smallest
+deviations from SM predictions and paves the way towards new-physics phenomena.
+
+Event generators with next-to-leading order (NLO) accuracy are the standard since 
+several years. However, there has been a substantial progress in achieving next-to-NLO
+(NNLO) event simulations in the past years, which have been driven by our research
+group. The \minnlo{} method to match NNLO predictions with parton showers (NNLO+PS)
+was introduced by us in 2019 for $2\to 1$ colour-singlet 
+processes \cite{Monni2019:whf,MonniXXX}, generalized $2\to 2$ reactions 
+(and beyond) \cite{Lombardi:} and even extended to top-quark pair production \cite{Mazzitelli, Mazzitelli}. With the latter work \minnlo{} became the first 
+(and still only) NNLO+PS method to deal with colour charges in initial and final state.
 %
-\subsubsection{B-hadron and jet algorithms}
+\subsubsection{NNLO+PS predictions for B-hadron and b-jet production}
+B-hadron and b-jet at NNLO+PS and b-jet algorithms
 \begin{Namen}
-R. Gauld, A. Ratti, M. Wiesemann, G. Zanderighi
+R. Gauld, J. Mazzitelli, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}
 %
-\subsubsection{Charm-quark pair production and netrino physics}
+\subsubsection{D-meson processes at NNLO+PS \mbox{and prompt neutrino background}}
 \begin{Namen}
 R. Gauld, T. Giani, A. Mahr, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}
 %
-\subsubsection{Exploring a new class of NNLO+PS predictions with bbZ}
+\subsubsection[\minnlo{} method for heavy-quark plus colour-singlet production and application to $b\bar{b}Z$ process]{\minnlo{} method for heavy-quark plus colour-singlet production and the \boldmath{$b\bar{b}Z$} process}
 \begin{Namen}
 M. Wiesemann
 \end{Namen}
 %
-\subsubsection{Higgs production in association with a bottom-quark pair: a flavour-scheme study}
+\subsubsection{Associated Higgs production with bottom quarks: a flavour-scheme study at NNLO+PS}
 \begin{Namen}
 C. Biello, R. Gauld, A. Sankar, M. Wiesemann, G. Zanderighi
 \end{Namen}
@@ -81,38 +104,57 @@ Example of a figure in~\fig{phenofig:bbH}.
 \end{center}
 \end{figure}
 %
-\subsubsection{Off-shell effects in top-quark pair production}
+\subsubsection{Off-shell top-quark pair production at NNLO+PS}
 \begin{Namen}
 C. Biello, C. Signorile-Signorile, M. Wiesemann, G. Zanderighi
 \end{Namen}
 %
-\subsubsection{Off-shell studies in tt(+X) processes}
-\begin{Namen}
-G. Pelliccioli
-\end{Namen}
-%
-\subsubsection{N-jettines formulation of \minnlo{}}
+\subsubsection[\minnlo{} method for jet processes using $N$-jettiness]{\minnlo{} method for jet processes using \boldmath{$N$}-jettiness}
 \begin{Namen}
 M. Ebert, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
 %
-\subsubsection{EW NLO+PS}
+\subsubsection{Inclusion of electroweak corrections in \minnlo{}}
 \begin{Namen}
 G. Pelliccioli, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
 %
-\subsubsection{Polirised NLO+PS predictions and quantum info}
+\subsubsection{Polarized NLO+PS predictions and quantum info}
 \begin{Namen}
 G. Pelliccioli, G. Zanderighi
 \end{Namen}
 %
-\subsubsection{Di-Higgs production at NNLO+PS}
+\printbibliography[heading=subbibliography]
+\end{refsection}
+
+\subsection{Fixed-order predictions for the hadron--hadron collisions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{refsection}
+Section for predictions at hadron-hadron colliders at fixed order.
+%
+\subsubsection{Top-mass renormalization in ttbar @ NNLO}
 \begin{Namen}
-F. Garosi, M. Wiesemann, G. Zanderighi
+J. Mazzitelli
+\end{Namen}
+%
+\subsubsection{Wbb @ NNLO}
+\begin{Namen}
+J. Mazzitelli
+\end{Namen}
+%
+\subsubsection{Z+c-jet NNLO QCD}
+\begin{Namen}
+R. Gauld
+\end{Namen}
+%
+\subsubsection{Off-shell NLO predictions in tt(+X) processes}
+\begin{Namen}
+G. Pelliccioli
 \end{Namen}
 %
 \printbibliography[heading=subbibliography]
 \end{refsection}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection[Pushing the precision in Higgs studies]{Pushing the precision in Higgs studies}
@@ -148,6 +190,11 @@ A. Sankar
 \subsubsection{Rapidity distribution of pseudoscalar Higgs}
 \begin{Namen}
 A. Sankar
+\end{Namen}
+%
+\subsubsection{Di-Higgs production at NNLO+PS}
+\begin{Namen}
+F. Garosi, S. Kumar, M. Wiesemann, G. Zanderighi
 \end{Namen}
 %
 \printbibliography[heading=subbibliography]
@@ -240,7 +287,12 @@ Space for a nice introduction.
 %
 \subsubsection{Polarised NLO+PS predictions in SMEFT}
 \begin{Namen}
-J. Linder, G. Pelliccioli, M. Wiesemann, G. Zanderighi
+J. Linder, G. Pelliccioli, G. Zanderighi
+\end{Namen}
+%
+\subsubsection{MEM method in Powheg and \minnlo{}}
+\begin{Namen}
+U. Haisch, J. Linder, M. Wiesemann, G. Zanderighi
 \end{Namen}
 %
 \subsubsection{NNLO+PS VH}

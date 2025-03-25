@@ -74,7 +74,7 @@ processes \cite{Monni2019:whf,MonniXXX}, generalized $2\to 2$ reactions
 (and beyond) \cite{Lombardi:} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli, Mazzitelli}. With the latter work \minnlo{} became the first 
 (and still only) NNLO+PS method to deal with colour charges in initial and final state.
 %
-\subsubsection{NNLO+PS predictions for B-hadron and b-jet production}
+\subsubsection[NNLO+PS predictions for $B$-hadron and $b$-jet production]{NNLO+PS predictions for \boldmath{$B$}-hadron and \boldmath{$b$}-jet production}
 
 \begin{Namen}
 R. Gauld, J. Mazzitelli, A. Ratti, M. Wiesemann, G. Zanderighi
@@ -91,13 +91,13 @@ variable number of light quark flavours.
 \begin{table}[b!]
 \begin{center}
 \includegraphics[width=1\linewidth]{plots/bb_table.pdf}
-\caption{B-hadron cross sections in $\mu$b.}
+\caption{$B$-hadron cross sections in $\mu$b.}
 \label{tab:bb}
 \end{center}
 \end{table}
 
 The $b\bar b$ \minnlo{}  generator has been developed in \citere{Ratti:} and employed for 
-realistic predictions of B-hadron production in comparison to various LHC measurements.
+realistic predictions of $B$-hadron production in comparison to various LHC measurements.
 By and large, a remarkable description of the measured cross sections is achieved, 
 see \tab{tab:bb} for instance. We are currently finalizing a second study where we 
 consider $b$-jet observables using our $b\bar b$ \minnlo{} simulation as
@@ -117,20 +117,45 @@ A preliminary comparison of our \minnlo{} predictions against ATLAS data is give
 \end{center}
 \end{figure}
 %
-\subsubsection{D-meson processes at NNLO+PS \mbox{and prompt neutrino background}}
+\subsubsection[$D$-meson processes at NNLO+PS and prompt neutrino background]{\boldmath{$D$}-meson processes at NNLO+PS \mbox{and prompt neutrino background}}
 \begin{Namen}
 R. Gauld, T. Giani, A. Mahr, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}
 
 Another important application of the developed \minnlo{} methology is the production
-of a charm-quark pair in hadron--hadron collisions. While this process also receives
+of a charm-quark pair ($c\bar c$) 
+in hadron--hadron collisions. While this process also receives
 substantial attention by the current LHC experiments, additionally it plays a crucial role in 
 the envisaged forward-physics experiments, in particular FASER. Even more crucially,
 it is source of a major background to neutrino telescopes, such as ICECUBE, namely
 the atmospheric prompt neutrino flux.
 In all cases, the underlying mechanism is to produce charm quarks through the collision
-of hadrons (either in a controlled collider environment or through 
+of hadrons (either in a controlled collider environment or through cosmic rays interactions 
+with the atmosphere), and the charm quarks then hadronize to $D$-mesons. Finally, in 
+their further decay process highly energetic neutrinos are produced.
 
+We have implemented a \minnlo{} generator for $c\bar c$ production to compute
+$D$-meson cross sections at NNLO+PS. Moreover, we have started to study 
+the propagation of particles through the the atmosphere through cascade equation
+based on the code Matrix Cascade Equations (MCEq) \cite{} to compute the prompt
+atmospheric neutrino flux. In \fig{fig:neutrinoflux} the prompt atmospheric neutrino
+flux is shown as a function of the neutrino energy comparing our LO and NLO+PS
+inputs to the default MCEq results. As can be seen, the NLO corrections are substantial.
+Moreover, the perturbative scale uncertainties (not shown here) are similarly large, 
+jeopardizing the precision of the predictions for the neutrino flux. 
+This is a severe limitation, which calls for the inclusion of higher-order corrections.
+By upgrading these predictions with NNLO accuracy for $c\bar c$ production of 
+our \minnlo{} generator we hope to significantly improve the estimation of the 
+prompt atmospheric neutrino background in ICECUBE in terms of both accuracy and
+precision.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/cc_neutrino_flux}
+\caption{Invariant-mass distribution of leading $b$-jets for \minnlo{} (blue), \minlo{} (grey).}
+\label{fig:neutrinoflux}
+\end{center}
+\end{figure}
 
 %
 \subsubsection[\minnlo{} method for heavy-quark plus colour-singlet production and application to $b\bar{b}Z$ process]{\minnlo{} method for heavy-quark plus colour-singlet production and the \boldmath{$b\bar{b}Z$} process}

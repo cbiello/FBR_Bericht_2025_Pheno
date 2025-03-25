@@ -142,12 +142,12 @@ M. Wiesemann
 \begin{Namen}
 C. Biello, R. Gauld, A. Sankar, M. Wiesemann, G. Zanderighi
 \end{Namen}
-Example of citation~\cite{Biello:2024pgo} or~\citere{Biello:2024pgo}.
-Example of a figure in~\fig{phenofig:bbH}.
+Higgs production associated with bottom quarks (\bbH{}) is a rare production mode at the LHC, serving as an irreducible background in Higgs-pair searches and gaining potential enhancement in BSM scenarios. Precise predictions of this process are important not only for experimental comparisons but also as a theoretical laboratory for studying heavy-quark effects. In processes involving bottom quarks, predictions can be obtained using different approaches to mass effects. In the scheme with five massless flavours (5FS), the bottom-quark component of the proton is perturbatively generated, enabling the resummation of large logarithmic contributions in the bottom mass. This approach treats the bottom quark as a massless parton, allowing for efficient high-order calculations. In~\citere{Biello:2024vdh}, we presented the first NNLO+PS simulation of this process within the massless scheme. For a more detailed description of bottom-quark kinematics, an alternative approach considers the production of massive bottom quarks in the hard scattering process, along with the Higgs boson, with four massless flavours (4FS). While computationally more demanding, this approach retains all mass effects order by order in perturbative QCD. Working in the \minnlo{} framework, which enables NNLO-accurate predictions for heavy-quark pair production in generic kinematics, we accessed the NNLO corrections in the massive scheme and matched them with a parton shower simulation~\cite{Biello:2024pgo}. Strong tensions between the massless and massive schemes in \bbH{} were observed in the past at lower accuracy, whereas a better agreement is found between the two NNLO+PS predictions, as shown in~\fig{phenofig:bbH}. The two schemes capture complementary aspects of bottom-quark dynamics. A generalised mass-variable flavour number scheme is desirable to achieve precise predictions across the full phase space. Using the method developed in~\citere{Gauld:2021zmq}, we are investigating the isolation of mass power corrections within the massive scheme, aiming to incorporate them into the massless prediction. This would allow us to retain the logarithmic resummation benefits of the massless scheme while systematically accounting for missing power corrections.
+
 \begin{figure}[phtb]
 \begin{center}
 \includegraphics[width=0.95\linewidth]{plots/bbH__ptHspectrum.pdf}
-\caption{Example plot.}
+\caption{Transverse spectrum of the Higgs boson produced via the bottom-quark Yukawa interaction at NNLO+PS in the massless (5FS, blue, dotted) and massive (4FS, red, solid) schemes~\cite{Biello:2024pgo}, with an NNLL+NNLO resummation result in the massless scheme (green, dashed).}
 \label{phenofig:bbH}
 \end{center}
 \end{figure}
@@ -341,7 +341,9 @@ F. Garosi
 \subsection{Beyond Standard Model seaches}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{refsection}
-Space for a nice introduction.
+Searches for physics beyond the Standard Model (BSM) physics remain a major goal of collider physics experiments.
+The sensitivity of many of the conducted searches rely on the availability of precise simulations of signal and background processes, in particular those aiming to observe indirect signals of BSM in terms of (small) deviations of known SM processes or signals of missing energy. 
+The development of such tools are essential for the interpretation of collider data, but can also play a crucial role in the design of future experiments~\cite{Bechtle:2024atq}.
 %
 \subsubsection{Polarised NLO+PS predictions in SMEFT}
 \begin{Namen}
@@ -367,6 +369,10 @@ R. Gauld, U. Haisch, J. Weiss
 \begin{Namen}
 R. Gauld
 \end{Namen}
+The nature of Dark Matter remains an outstanding question in elementary particle physics, with searches only producing negative (or irreproducible) results.
+This suggests to conduct experiments which can probe currently unexplored regions of the parameter space of Dark Matter models.
+The Lohengrin experiment is an example of such a proposal~\cite{Bechtle:2024atq} which aims to perform the fixed-target missing momentum based technique to search for dark-sector particles (the ~GeV energy electron beam is provided by the ELSA Accelerator in Bonn).
+A simulation tool (lohengrin++) has been developed jointly at the MPP (with Uni. Bonn) for the scattering of electrons and nuclear targets for both signals of (light) Dark Matter as well as SM background processes. This tool has already played an important role in the detector design (feasibility study) and will continue to be developed as planning for the experiment continues. An example of a (differential) Signal-to-Background study for a 10~MeV Dark Photon produced in the collision of a 3.2~GeV electron beam incident on Tungsten is shown in Fig.~{X}.
 %
 \subsubsection{$b\rightarrow s \gamma$ corrections for the physical value of the charm mass}
 \begin{Namen}

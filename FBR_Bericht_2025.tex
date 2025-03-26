@@ -70,8 +70,8 @@ several years. However, there has been a substantial progress in achieving next-
 (NNLO) event simulations in the past years, which have been driven by our research
 group. The \minnlo{} method to match NNLO predictions with parton showers (NNLO+PS)
 was introduced by us in 2019 for $2\to 1$ colour-singlet 
-processes \cite{Monni2019:whf,MonniXXX}, generalized $2\to 2$ reactions 
-(and beyond) \cite{Lombardi:} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli, Mazzitelli}. With the latter work \minnlo{} became the first 
+processes \cite{Monni:2019whf,Monni:2020nks}, generalized $2\to 2$ reactions 
+(and beyond) \cite{Lombardi:2020wju} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli:2020jio,Mazzitelli:2021mmm}. With the latter work \minnlo{} became the first 
 (and still only) NNLO+PS method to deal with colour charges in initial and final state.
 %
 \subsubsection[NNLO+PS predictions for $B$-hadron and $b$-jet production]{NNLO+PS predictions for \boldmath{$B$}-hadron and \boldmath{$b$}-jet production}
@@ -96,14 +96,14 @@ variable number of light quark flavours.
 \end{center}
 \end{table}
 
-The $b\bar b$ \minnlo{}  generator has been developed in \citere{Ratti:} and employed for 
+The $b\bar b$ \minnlo{}  generator has been developed in \citere{Mazzitelli:2023znt} and employed for 
 realistic predictions of $B$-hadron production in comparison to various LHC measurements.
 By and large, a remarkable description of the measured cross sections is achieved, 
 see \tab{tab:bb} for instance. We are currently finalizing a second study where we 
 consider $b$-jet observables using our $b\bar b$ \minnlo{} simulation as
 well as massless (and massive) NLO+PS dijet simulations. In this context, 
 algorithms to appropriately define the bottom flavour in jets play a crucial role, see
-\citere{Rhorryspaper} for instance, and we find that the by far dominant effect 
+\citere{Gauld:2022lem} for instance, and we find that the by far dominant effect 
 of the difference with to the standard $b$-tagging algorithms used by the experiments
 stems from the treatment of $g\to b\bar b$ splittings.
 A preliminary comparison of our \minnlo{} predictions against ATLAS data is given in 
@@ -137,7 +137,7 @@ their further decay process highly energetic neutrinos are produced.
 We have implemented a \minnlo{} generator for $c\bar c$ production to compute
 $D$-meson cross sections at NNLO+PS. Moreover, we have started to study 
 the propagation of particles through the the atmosphere through cascade equation
-based on the code Matrix Cascade Equations (MCEq) \cite{} to compute the prompt
+based on the code Matrix Cascade Equations (MCEq) \cite{Fedynitch:2015zbe} to compute the prompt
 atmospheric neutrino flux. In \fig{fig:neutrinoflux} the prompt atmospheric (electron) neutrino
 flux is shown as a function of the neutrino energy comparing our LO and NLO+PS
 inputs to the default MCEq results. As can be seen, the NLO corrections are substantial.
@@ -163,7 +163,7 @@ precision.
 M. Wiesemann
 \end{Namen}
 %
-Just recently, we have derived the extension of the \minnlo{} formalism to deal with the production of a heavy quark pair and a colour singlet \cite{Mazzitelli}.
+Just recently, we have derived the extension of the \minnlo{} formalism to deal with the production of a heavy quark pair and a colour singlet \cite{Mazzitelli:2024ura}.
 It is based on the resummation formula for the transverse momentum of the final-state system as in previous \minnlo{} 
 formulations. Although the resummation formula has the same structure as for a heavy quark pair, we had to correctly
 account for the general kinematics of the final state, since the two heavy quarks are no longer back-to-back.
@@ -171,7 +171,7 @@ account for the general kinematics of the final state, since the two heavy quark
 With this work, we have paved the way for a number of new NNLO+PS calculations, involving processes with two heavy quarks (top, bottom, charm) 
 and one or more colour singlet bosons ($Z$, $W$, Higgs) including their decays. In fact, even the full off-shell process of top-quark pair production 
 and decay belongs into that category. As a first application, we have considered the associated production of two bottom quarks and a $Z$ boson ($b\bar{b}Z$)
-in the four-flavour scheme (4FS) \cite{Mazzitelli}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data 
+in the four-flavour scheme (4FS) \cite{Mazzitelli:2024ura}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data 
 and with five-flavour scheme (5FS) predictions. As one can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and the necessary to describe LHC data.
 
 \begin{figure}[bh]
@@ -209,10 +209,10 @@ M. Ebert, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
 Despite processes involving light jets in the final state building a 
 central class of LHC reactions, no NNLO+PS generators exist for any of them.
-With the work of \citere{}, we initiated the further extension of the \minnlo{} method by
+With the work of \citere{Ebert:2024zdj}, we initiated the further extension of the \minnlo{} method by
 formulating it in terms of the $N$-jettiness variable. This jet-resolution variable,
 in principle, enables the treatment of any $N\ge 0$ jets in the final state within the 
-NNLO+PS matching. In \citere{} we considered the case $N=0$, namely colour-singlet
+NNLO+PS matching. In \citere{Ebert:2024zdj} we considered the case $N=0$, namely colour-singlet
 production, and compared our new $0$-jettiness predictions with the original \minnlo{}
 ones using the transverse momentum of the colour singlet.
 Moreover, we discussed the $N=1$ case, applicable to colour singlet
@@ -242,7 +242,7 @@ where EW Sudakov logarithms yield substantial effects.
 
 Given that \minnlo{} provides the most accurate event simulations in 
 perturbative QCD to date, the inclusion of EW effects in these predictions
-is an important extension. In \citere{}, we developed a \minnlo{} NNLO+PS generator 
+is an important extension. In \citere{Lindert:2022qdd}, we developed a \minnlo{} NNLO+PS generator 
 as well as a POWHEG NLO+PS  generator including QCD and EW corrections 
 for $WZ$ production. We then studied, different approaches to combine the
 QCD NNLO+PS predictions with the EW NLO+PS predictions using additive 
@@ -349,13 +349,13 @@ including the complete top-mass effects,
 we have developed the first (and so far only) 
 NNLO+PS generator for the loop-induced 
 Higgs production process in gluon fusion in the full theory using 
-the \minnlo{} method in \citere{}. Figure\,\ref{fig:topmass_Higgs_pT} shows
+the \minnlo{} method in \citere{Niggetiedt:2024nmp}. Figure\,\ref{fig:topmass_Higgs_pT} shows
 the crucial importance of top-mass effect in differential Higgs production
 at NNLO+PS at the example of the Higgs transverse-momentum ($p_T$)
 spectrum by comparing the full theory result (blue solid) against
 the approximation of an infinitely heavy top quark (black, dashed).
 
-In \citere{} we have also quantified the high quality of relevant approximations 
+In \citere{Niggetiedt:2024nmp} we have also quantified the high quality of relevant approximations 
 of the top-mass effects at NNLO, which were feasible before, in comparison to our 
 novel full-theory results. These results will be useful to provide well-motivated 
 approximations of top-mass effects beyond NNLO. Currently, we are extending 
@@ -586,7 +586,7 @@ F. Garosi
 \end{refsection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Beyond Standard Model seaches}
+\subsection{Beyond Standard Model studies}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{refsection}
 Searches for physics beyond the Standard Model (BSM) physics remain a major goal of collider physics experiments.

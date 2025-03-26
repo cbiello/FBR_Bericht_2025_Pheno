@@ -181,22 +181,58 @@ Higgs production associated with bottom quarks (\bbH{}) is a rare production mod
 \begin{Namen}
 C. Biello, C. Signorile-Signorile, M. Wiesemann, G. Zanderighi
 \end{Namen}
-Given the experimental possibilities provided by the LHC to study the properties of the top quark through decay products, theoretical efforts are required to accurately describe off-shell effects in top-quark pair production. The current advancement of the \minnlo{} method enables the precise simulation of this process, including decay effects in the fully leptonic channel ($pp\rightarrow e^-\bar{\nu}_e\mu^+\nu_\mu$). With six particles in the final state at leading order, this represents the highest multiplicity configuration we are currently investigating at NNLO+PS. Its complexity poses both computational and conceptual challenges: we address the high computational cost by improving the numerical efficiency of the code, while the absence of an exact two-loop amplitude requires the development of reliable approximations.
+Given the experimental possibilities provided by the LHC to study the properties of the top quark through decay products, theoretical efforts are required to accurately describe off-shell effects in top-quark pair production. The current advancement of the \minnlo{} method enables the precise simulation of this process, including decay effects in the fully leptonic channel ($pp\rightarrow e^-\bar{\nu}_e\mu^+\nu_\mu b\bar b$). With six particles in the final state at leading order, this represents the highest multiplicity configuration we are currently investigating at NNLO+PS. Its complexity poses both computational and conceptual challenges: we address the high computational cost by improving the numerical efficiency of the code, while in the absence of an exact two-loop amplitude we investigate the development of reliable approximations.
 % 
 \subsubsection[\minnlo{} method for jet processes using $N$-jettiness]{\minnlo{} method for jet processes using \boldmath{$N$}-jettiness}
 \begin{Namen}
 M. Ebert, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
+Despite processes involving light jets in the final state building a 
+central class of LHC reactions, no NNLO+PS generators exist for any of them.
+With the work of \citere{}, we initiated the further extension of the \minnlo{} method by
+formulating it in terms of the $N$-jettiness variable. This jet-resolution variable,
+in principle, enables the treatment of any $N\ge 0$ jets in the final state within the 
+NNLO+PS matching. In \citere{} we considered the case $N=0$, namely colour-singlet
+production, and compared our new $0$-jettiness predictions with the original \minnlo{}
+ones using the transverse momentum of the colour singlet.
+Moreover, we discussed the $N=1$ case, applicable to colour singlet
+plus jet production, by deriving the \minnlo{} formalism for $1$-jettiness.
 %
 \subsubsection{Inclusion of electroweak corrections in \minnlo{}}
 \begin{Namen}
 G. Pelliccioli, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
-%
+Although, by and large, 
+QCD perturbation theory provides the dominant corrections at hadron 
+colliders due to the size of the strong coupling at the relevant energies, 
+electroweak (EW) effects are indispensable for the precision programme of the LHC.
+In certain phase-space regions EW corrections can even be dominant. This is the case
+when obsevables become sensitive to photon radiation, e.g. for invariant-mass 
+distribution of a group of leptons, or in the high-energy tails of kinematical distributions,
+where EW Sudakov logarithms yield substantial effects.
+
+Given that \minnlo{} provides the most accurate event simulations in 
+perturbative QCD to date, the inclusion of EW effects in these predictions
+is an important extension. In \citere{}, we developed a \minnlo{} NNLO+PS generator 
+as well as a POWHEG NLO+PS  generator including QCD and EW corrections 
+for $WZ$ production. We then studied, different approaches to combine the
+QCD NNLO+PS predictions with the EW NLO+PS predictions using additive 
+and multiplicative matching schemes as well as different treatments of the 
+QCD and QED radiation in the parton showers.
+
+Currently, we are working on a more sophisticated inclusion of EW effects 
+by accounting for NLO EW corrections for $WZ+jet$ production
+directly within the \minnlo{} formulae. We then supplement the all-order treatment 
+with QED effects to reach NLO EW also for inclusive $WZ$ observables without
+extra jets. This approach is currently developed and tested for the Drell-Yan process.
+
+
 \subsubsection{Polarized NLO+PS predictions and quantum info}
 \begin{Namen}
 G. Pelliccioli, G. Zanderighi
 \end{Namen}
+%
+{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
 %
 \printbibliography[heading=subbibliography]
 \end{refsection}
@@ -246,12 +282,12 @@ A. Behring, G. Zanderighi
 U. Haisch, M. Niggetiedt
 \end{Namen}
 %
-\subsubsection{Exact top-quark mass dependence in Higgs production}
+\subsubsection{Top-mass dependence in Higgs production at NNLO+PS}
 \begin{Namen}
-M. Niggetiedt
+M. Niggetiedt, M. Wiesemann
 \end{Namen}
 %
-\subsubsection{Higgs predictions with bottom-quark mass effects}
+\subsubsection{Light-quark mass effects in Higgs production at NNLO}
 \begin{Namen}
 M. Niggetiedt
 \end{Namen}

@@ -138,7 +138,7 @@ We have implemented a \minnlo{} generator for $c\bar c$ production to compute
 $D$-meson cross sections at NNLO+PS. Moreover, we have started to study 
 the propagation of particles through the the atmosphere through cascade equation
 based on the code Matrix Cascade Equations (MCEq) \cite{} to compute the prompt
-atmospheric neutrino flux. In \fig{fig:neutrinoflux} the prompt atmospheric neutrino
+atmospheric neutrino flux. In \fig{fig:neutrinoflux} the prompt atmospheric (electron) neutrino
 flux is shown as a function of the neutrino energy comparing our LO and NLO+PS
 inputs to the default MCEq results. As can be seen, the NLO corrections are substantial.
 Moreover, the perturbative scale uncertainties (not shown here) are similarly large, 
@@ -149,13 +149,13 @@ our \minnlo{} generator we hope to significantly improve the estimation of the
 prompt atmospheric neutrino background in ICECUBE in terms of both accuracy and
 precision.
 
-%\begin{figure}[h]
-%\begin{center}
-%\includegraphics[width=0.95\linewidth]{plots/cc_neutrino_flux}
-%\caption{Invariant-mass distribution of leading $b$-jets for \minnlo{} (blue), \minlo{} (grey).}
-%\label{fig:neutrinoflux}
-%\end{center}
-%\end{figure}
+\begin{figure}[b!]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/cc_neutrino_flux.pdf}
+\caption{Prompt electron neutrino flux as a function of the neutrino energy.}
+\label{fig:neutrinoflux}
+\end{center}
+\end{figure}
 
 %
 \subsubsection[\minnlo{} method for heavy-quark plus colour-singlet production and application to $b\bar{b}Z$ process]{\minnlo{} method for heavy-quark plus colour-singlet production and the \boldmath{$b\bar{b}Z$} process}
@@ -163,13 +163,31 @@ precision.
 M. Wiesemann
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
-%
+Just recently, we have derived the extension of the \minnlo{} formalism to deal with the production of a heavy quark pair and a colour singlet \cite{Mazzitelli}.
+It is based on the resummation formula for the transverse momentum of the final-state system as in previous \minnlo{} 
+formulations. Although the resummation formula has the same structure as for a heavy quark pair, we had to correctly
+account for the general kinematics of the final state, since the two heavy quarks are no longer back-to-back.
+
+With this work, we have paved the way for a number of new NNLO+PS calculations, involving processes with two heavy quarks (top, bottom, charm) 
+and one or more colour singlet bosons ($Z$, $W$, Higgs) including their decays. In fact, even the full off-shell process of top-quark pair production 
+and decay belongs into that category. As a first application, we have considered the associated production of two bottom quarks and a $Z$ boson ($b\bar{b}Z$)
+in the four-flavour scheme (4FS) \cite{Mazzitelli}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data 
+and with five-flavour scheme (5FS) predictions. As one can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and the necessary to describe LHC data.
+
+\begin{figure}[bh]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/bbZ_ptbjet.pdf}
+\caption{$b$-jet $p_T$ spectrum of \minnlo{} (red), NLO+PS (blue) and CMS data (black).}
+\label{fig:bbZ}
+\end{center}
+\end{figure}
+
+
 \subsubsection{Associated Higgs production with bottom quarks: a flavour-scheme study at NNLO+PS}
 \begin{Namen}
 C. Biello, R. Gauld, A. Sankar, M. Wiesemann, G. Zanderighi
 \end{Namen}
-Higgs production associated with bottom quarks (\bbH{}) is a rare production mode at the LHC, serving as an irreducible background in Higgs-pair searches and gaining potential enhancement in BSM scenarios. Precise predictions of this process are important not only for experimental comparisons but also as a theoretical laboratory for studying heavy-quark effects. In processes involving bottom quarks, predictions can be obtained using different approaches to mass effects. In the scheme with five massless flavours (5FS), the bottom-quark component of the proton is perturbatively generated, enabling the resummation of large logarithmic contributions in the bottom mass. This approach treats the bottom quark as a massless parton, allowing for efficient high-order calculations. In~\citere{Biello:2024vdh}, we presented the first NNLO+PS simulation of this process within the massless scheme. For a more detailed description of bottom-quark kinematics, an alternative approach considers the production of massive bottom quarks in the hard scattering process, along with the Higgs boson, with four massless flavours (4FS). While computationally more demanding, this approach retains all mass effects order by order in perturbative QCD. Working in the \minnlo{} framework, which enables NNLO-accurate predictions for heavy-quark pair production in generic kinematics, we accessed the NNLO corrections in the massive scheme and matched them with a parton shower simulation~\cite{Biello:2024pgo}. Strong tensions between the massless and massive schemes in \bbH{} were observed in the past at lower accuracy, whereas a better agreement is found between the two NNLO+PS predictions, as shown in~\fig{phenofig:bbH}. The two schemes capture complementary aspects of bottom-quark dynamics. A generalised mass-variable flavour number scheme is desirable to achieve precise predictions across the full phase space. Using the method developed in~\citere{Gauld:2021zmq}, we are investigating the isolation of mass power corrections within the massive scheme, aiming to incorporate them into the massless prediction. This would allow us to retain the logarithmic resummation benefits of the massless scheme while systematically accounting for missing power corrections.
+Higgs production associated with bottom quarks (\bbH{}) is a rare production mode at the LHC, serving as an irreducible background in Higgs-pair searches and gaining potential enhancement in BSM scenarios. Precise predictions of this process are important not only for experimental comparisons but also as a theoretical laboratory for studying heavy-quark effects. In processes involving bottom quarks, predictions can be obtained using different approaches to mass effects. In the scheme with 5FS, the bottom-quark component of the proton is perturbatively generated, enabling the resummation of large logarithmic contributions in the bottom mass. This approach treats the bottom quark as a massless parton, allowing for efficient high-order calculations. In~\citere{Biello:2024vdh}, we presented the first NNLO+PS simulation of this process within the massless scheme. For a more detailed description of bottom-quark kinematics, an alternative approach considers the production of massive bottom quarks in the hard scattering process, along with the Higgs boson, with four massless flavours (4FS). While computationally more demanding, this approach retains all mass effects order by order in perturbative QCD. Working in the \minnlo{} framework, which enables NNLO-accurate predictions for heavy-quark pair production in generic kinematics, we accessed the NNLO corrections in the massive scheme and matched them with a parton shower simulation~\cite{Biello:2024pgo}. Strong tensions between the massless and massive schemes in \bbH{} were observed in the past at lower accuracy, whereas a better agreement is found between the two NNLO+PS predictions, as shown in~\fig{phenofig:bbH}. The two schemes capture complementary aspects of bottom-quark dynamics. A generalised mass-variable flavour number scheme is desirable to achieve precise predictions across the full phase space. Using the method developed in~\citere{Gauld:2021zmq}, we are investigating the isolation of mass power corrections within the massive scheme, aiming to incorporate them into the massless prediction. This would allow us to retain the logarithmic resummation benefits of the massless scheme while systematically accounting for missing power corrections.
 
 \begin{figure}[phtb]
 \begin{center}

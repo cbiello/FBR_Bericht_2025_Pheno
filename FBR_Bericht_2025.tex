@@ -362,24 +362,54 @@ approximations of top-mass effects beyond NNLO. Currently, we are extending
 our \minnlo{} calculation by the complete dependence on light-quark mass 
 effects (bottom and charm) up to NNLO.
 %
-\subsubsection{Next-to-soft threshold in \bbH{}}
+\subsubsection{Beyond the leading-power}
 \begin{Namen}
 A. Sankar
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
-%
-\subsubsection{Rapidity distribution of pseudoscalar Higgs}
-\begin{Namen}
-A. Sankar
-\end{Namen}
-%
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+I worked on the study of next-to-soft threshold effects—commonly referred to as next-to-leading power (NLP) terms—in the context of scalar and pseudo-scalar Higgs production, with the results published in~\cite{Das:2024pac} and~\cite{Ravindran:2023qae}, respectively. In these works, we computed all-order NLP resummed corrections within perturbative QCD and performed extensive phenomenological analyses to study the impact of NLP resummation on Higgs production at the LHC.
 %
 \subsubsection{VBF $H\rightarrow b\bar{b}$ production}
 \begin{Namen}
 A. Behring, G. Zanderighi
 \end{Namen}
+Higgs production in vector boson fusion (VBF) is the second most common
+production channel at the LHC. This explains the considerable interest from
+both theorists and experimentalists in precise descriptions of this process.
+The Higgs also decays predominantly to a pair of $b$ quarks, making the
+combination of VBF with the $H \to b\bar{b}$ decay channel even more
+interesting.
+
+Following developments where the production \cite{Asteriadis:2021gpd} and decay
+\cite{Behring:2019oci} have been studied separately at NNLO in QCD, we combined
+these descriptions in Ref.~\cite{Asteriadis:2024nbg} in the narrow-width
+approximation.
+
+It turned out that the NNLO corrections for the fiducial cross-section at NNLO
+show only slow perturbative convergence. This came as a surprise since neither
+the production nor the decay, when considered separately, show such a
+behaviour. In particular, this raises concerns whether a description at NNLO in
+QCD is sufficient for accurate predictions of this process.
+
+In Ref.~\cite{steriadis:2024nbg} we managed to trace this back to an interplay
+of additional radiation from the Higgs decay at higher perturbative orders with
+the definition of the fiducial cuts. These cuts (inspired by an analogous ATLAS
+analysis), include a cut on the transverse momentum of the subleading $b$ jet
+of $p_{T,b_2} \geq 65\,\mathrm{GeV}$. This happens to place the cut at a point
+where the transverse momentum spectrum is steeply falling, and therefore makes
+observables with this cut highly susceptible to additional radiation added by
+higher-order corrections.
+
+This observation led us to ask the question whether effects from this
+additional radiation could already be captured by a parton shower description
+of the decay process. In particular it is interesting whether a NNLO
+description matched to a parton shower shows better perturbative convergence.
+
+Given the expertise with parton-shower-matched calculation in the group at MPP,
+it was natural to join forces and combine the NNLO+PS calculation for $H \to
+b\bar{b}$ decays from Ref.~\cite{Bizon:2019tfo} with the NNLO description for
+VBF from Ref.~\cite{Asteriadis:2021gpd}. This project is currently ongoing.
+
 %
 {\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
 %
@@ -448,6 +478,14 @@ C. Wang
 %
 {\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
 %
+%
+\subsubsection{$b\rightarrow s \gamma$ corrections for the physical value of the charm mass}
+\begin{Namen}
+M. Niggetiedt
+\end{Namen}
+%
+{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+
 \printbibliography[heading=subbibliography]
 \end{refsection}
 
@@ -634,21 +672,25 @@ R. Gauld
 The nature of Dark Matter remains an outstanding question in elementary particle physics, with searches only producing negative (or irreproducible) results.
 This suggests to conduct experiments which can probe currently unexplored regions of the parameter space of Dark Matter models.
 The Lohengrin experiment is an example of such a proposal~\cite{Bechtle:2024atq} which aims to perform the fixed-target missing momentum based technique to search for dark-sector particles (the ~GeV energy electron beam is provided by the ELSA Accelerator in Bonn).
-A simulation tool (lohengrin++) has been developed jointly at the MPP (with Uni. Bonn) for the scattering of electrons and nuclear targets for both signals of (light) Dark Matter as well as SM background processes. This tool has already played an important role in the detector design (feasibility study) and will continue to be developed as planning for the experiment continues. An example of a (differential) Signal-to-Background study for a 10~MeV Dark Photon produced in the collision of a 3.2~GeV electron beam incident on Tungsten is shown in Fig.~{X}.
+A simulation tool (lohengrin++) has been developed jointly at the MPP (with Uni. Bonn) for the scattering of electrons and nuclear targets for both signals of (light) Dark Matter as well as SM background processes. This tool has already played an important role in the detector design (feasibility study) and will continue to be developed as planning for the experiment continues. 
+% RG, probably cut this based on 
+An example of a (differential) Signal-to-Background study for a 10~MeV Dark Photon produced in the collision of a 3.2~GeV electron beam incident on Tungsten is shown in Fig.~\ref{fig:lohengrin}.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/SB_Lohengrin.pdf}
+\caption{Differential signal to background ratio as a function of electron kinematics for the production of a $10~{\rm MeV}$ Dark-photon at the hypothetical Lohengrin experiment.}
+\label{fig:lohengrin}
+\end{center}
+\end{figure}
+
+
 %
-\subsubsection{$b\rightarrow s \gamma$ corrections for the physical value of the charm mass}
-\begin{Namen}
-M. Niggetiedt
-\end{Namen}
+%\subsubsection{Cubic Higgs self interaction in Higgs plus jet at two loops}
+%\begin{Namen}
+%U. Haisch, M. Niggetiedt
+%\end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
-%
-\subsubsection{Cubic Higgs self interaction in Higgs plus jet at two loops}
-\begin{Namen}
-U. Haisch, M. Niggetiedt
-\end{Namen}
-%
-{\color{red} ===========================\\ ==\; REMOVE? $\rightarrow$ IN ULI's REPORT\; ==\\ ===========================}
+%{\color{red} ===========================\\ ==\; REMOVE? $\rightarrow$ IN ULI's REPORT\; ==\\ ===========================}
 %
 \printbibliography[heading=subbibliography]
 \end{refsection}

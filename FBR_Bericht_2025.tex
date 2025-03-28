@@ -462,30 +462,49 @@ C. Signorile-Signorile
 M. Niggetiedt
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+The treatment of the chiral matrix $\gamma_5$ in loop diagrams within dimensional regularization is a well-known technical challenge. Non-anticommuting $\gamma_5$ schemes are commonly used due to their technical ease and the availability of results for necessary renormalization constants. However, the use of a non-anticommuting $\gamma_5$ scheme may break certain symmetry properties of matrix elements or Green's functions giving rise to anomalous terms at the bare level. In order to recover the broken symmetry properties, $\gamma_5$-related symmetry-restoration renormalizations must be applied. 
+
+In our study~\cite{Chen:2024cvu}, we have for the first time calculated the renormalization constant for a pseudoscalar operator regularized with a non-anticommuting $\gamma_5$ in dimensional regularization up to four-loop order in QCD. We have conducted a decomposition of the renormalization constant of the pseudoscalar operator, in order to separate explicitly the component that arises solely from $\gamma_5$-related symmetry-restoration. This facilitates the transformation to other (non-$\overline{\mathrm{MS}}$) renormalization schemes. Exploiting the renormalization-group invariance of the appropriately defined renormalization constant for this operator, we have been able to obtain the corresponding $\overline{\mathrm{MS}}$ factor at five-loop order in QCD. 
 %
 \subsubsection{Soft function at N3LO}
 \begin{Namen}
 M. Delto, C. Wang
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+In the coming high luminosity LHC era, describing the highly precise differential cross-sections requires us to understand the intricate infrared structures of QCD at even higher perturbative order.
+In order to produce meaningful cross-sections, we need to correctly subtract the spurious infrared divergences before integrating the amplitude over the phase space.
+$N$-jettiness slicing is one of many ways to resolve this problem, but it is not available at $\text{N}^{3}\text{LO}$ due to the absence of the soft function calculation.
+In~\cite{Baranowski:2024ene,Baranowski:2024vxg,Baranowski:2024ysi}, we completed the calculation of the last missing ingredient of the zero-jettiness slicing method for color-singlet production at $\text{N}^{3}\text{LO}$, marking our first step towards the $N$-jettiness slicing method for general colorful final states.
+Along the way, we developed several new computational techniques, such as the extended reverse unitarity method and the integral filtering method, which may find wider application in the field of precision calculation.
 %
 \subsubsection{Reclassifying Feynman Integrals as Special Functions}
 \begin{Namen}
 C. Wang
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+The Feynman integral is the central object in the perturbation theory of quantum field theory, and its evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
+Intriguingly, various kinds of special functions in mathematics appear naturally in the computation of Feynman integrals.
+In~\cite{Liu:2023jkr}, we proposed a recipe for efficiently evaluating Feynman integrals through the auxiliary mass flow method and differential equations in the kinematic variable space.
+The efficient evaluation method available to Feynman integrals may also serve as a way of exploring the space of special functions.
 %
 %
-\subsubsection{$b\rightarrow s \gamma$ corrections for the physical value of the charm mass}
+\subsubsection{The $Q_{1,2}$--$Q_7$ interference contributions to $b \to s \gamma$ at ${\mathcal{O}}(\alpha_s^2)$ for the physical value of $m_c$}
 \begin{Namen}
 M. Niggetiedt
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
-
+Rare $B$-meson decays provide important constraints on various BSM scenarios. Of particular interest in this context is the inclusive radiative decay $\bar{B}\to X_s\gamma$ which is currently measured with $5\%$ accuracy. %\cite{HeavyFlavorAveragingGroup:2022wzx,ParticleDataGroup:2022pth}. 
+For $E_\gamma > 1.6 \,\mathrm{GeV}$, the $\bar{B}\to X_s\gamma$ decay rate is well approximated by the perturbative decay $b\to X_s^p\gamma$ with $X_s^p = s,sg,sgg,sq\bar{q},\ldots$ as partonic final states. 
+%
+In order to match the experimental accuracy, NLO electroweak as well as NNLO QCD (${\mathcal{O}}(\alpha_s^2)$) corrections need to be considered. In previous studies, some of the important NNLO QCD corrections that depend on the mass of the charm quark have only been addressed in the unphysical limit $m_c \gg m_b$ \cite{Misiak:2010sk}, or for a massless charm quark \cite{Czakon:2015exa}. The approximate treatment of charm-quark mass effects induces $3\%$ uncertainty on top of the $3\%$ uncertainty due to missing higher orders and $2.5\%$ due to input parameters and non-perturbative effects. 
+%
+While currently, experimental measurements and theory prediction are in agreement, the ultimate Bell II luminosity will allow for high-statistics measurements pushing the accuracy below $5\%$. This necessitates the elimination of uncertainties due to charm-quark mass effects in theory. 
+%
+To this end, we have computed all four-loop Feynman diagrams for the $b \to s \gamma$ transition with massive bottom and charm quarks in the framework of reverse unitarity. Thereby, the calculation has been separated into the evaluation of partial amplitudes with two, three, and four cut propagators. The most challenging contribution involving two cut propagators has been the subject of our work \cite{Czaja:2023ren}. 
+%To deal with the high complexity of the underlying Feynman integrals, we have developed a semi-analytical technique based on differential equations, which allowed us to determine the desired amplitudes at high-precision. 
+%
+Our study constitutes a major step towards the full result for the $b \to s \gamma$ decay rate taking into account the exact charm-quark mass dependence at NNLO QCD. Meanwhile, the calculation of contributions with three and four cut propagators has been accomplished and the cancellation of UV and IR divergences when combined with the published results \cite{Czaja:2023ren} has been observed. A complete analysis including contributions from bremsstrahlung is currently in preparation. 
+%
 \printbibliography[heading=subbibliography]
 \end{refsection}
 
@@ -612,7 +631,10 @@ These advancements will have important implications for LHC measurements involvi
 C. Wang
 \end{Namen}
 %
-{\color{red} ==================\\ ====\; TO BE DONE\; ====\\ ==================}
+In recent years, experimentalists have discovered various exotic hadronic states containing heavy quarks, like $X Y Z$ states and $P_{c}$, beyond the familiar mesons and baryons.
+While the existence of exotic hadronic states has been conjectured since the conception of the quark model, we still have little knowledge of their mass spectra or their production and decay mechanisms.
+In~\cite{Wu:2023ntn}, we investigated several hidden-charm tetraquark systems using QCD sum rules and provided a possible explanation of the observed signals.
+We find that the operator mixing effect is crucial to a robust phenomenological description, highlighting the importance of higher-order corrections in this context.
 %
 \subsubsection{Neutrino content of the muon}
 \begin{Namen}

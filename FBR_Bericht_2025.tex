@@ -51,11 +51,10 @@ practical predictions and tools to be used for comparisons of data and
 theory.
 
 Currently, the group consists of two group leaders, one senior
-postdocs, six postdocs, including one funded by the TUM, as well as
-four PhD students. Some of these researchers joined during this
-reporting period, while others left since the last reporting
-period. This report coveres the activity of all group members while at
-MPP. 
+postdoc, six postdocs (one funded by the TUM), as well as
+four PhD students. Some of these researchers joined the group during this
+reporting period, while others have left since the last reporting
+period. This report covers the activity of all group members (old and new) while at MPP. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,17 +73,18 @@ To keep up with the steadily decreasing experimental uncertainties, it is
 mandatory to develop event simulations at the highest possible accuracy.
 This can be achieved by improving the perturbative all-order description 
 of parton showers, on the one hand, and by including higher-order corrections
-in the event simulations. This will allows us ultimately to observe even smallest
-deviations from SM predictions and paves the way towards new-physics phenomena.
+in the event simulations on the other. This will allows us ultimately to observe even the smallest
+deviations from SM predictions and paves a way towards observing new-physics phenomena.
 
-Event generators with next-to-leading order (NLO) accuracy are the standard since 
-several years. However, there has been a substantial progress in achieving next-to-NLO
-(NNLO) event simulations in the past years, which have been driven by our research
+Event generators with next-to-leading order (NLO) QCD accuracy have been the standard for several years. 
+However, there has been a substantial progress in achieving next-to-NLO
+(NNLO) event simulations in the past years, much of which has been driven by our research
 group. The \minnlo{} method to match NNLO predictions with parton showers (NNLO+PS)
 was introduced by us in 2019 for $2\to 1$ colour-singlet 
 processes \cite{Monni:2019whf,Monni:2020nks}, generalized $2\to 2$ reactions 
-(and beyond) \cite{Lombardi:2020wju} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli:2020jio,Mazzitelli:2021mmm}. With the latter work \minnlo{} became the first 
-(and still only) NNLO+PS method to deal with colour charges in initial and final state.
+(and beyond) \cite{Lombardi:2020wju} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli:2020jio,Mazzitelli:2021mmm}. 
+With the latter work, the \minnlo{} method became the first 
+(and still only) NNLO+PS method to deal with colour charges in both the initial and final state.
 %
 \subsubsection[NNLO+PS predictions for $B$-hadron and $b$-jet production]{NNLO+PS predictions for \boldmath{$B$}-hadron and \boldmath{$b$}-jet production}
 
@@ -92,34 +92,43 @@ processes \cite{Monni:2019whf,Monni:2020nks}, generalized $2\to 2$ reactions
 R. Gauld, J. Mazzitelli, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}
 
-Based on the previous advancements of the \minnlo{} method,
+Expanding upon the previous advancements of the \minnlo{} method to $t \bar t$ production, 
+%Based on the previous advancements of the \minnlo{} method,
 we have implemented a new NNLO+PS generator for bottom-quark quark pair ($b\bar b$) production.
-To this end, the previous \minnlo{} implementation in POWHEG-BOX-V2 was ported 
-to the POWHEG-BOX-RES framework, and then extended to account for 
+The new implementation has been performed in the POWHEG-BOX-RES framework, and extended to account for 
 general quark masses as well as different flavour-number schemes by implementing
 variable number of light quark flavours.
-
+%To this end, the previous \minnlo{} implementation in POWHEG-BOX-V2 was ported 
+%to the POWHEG-BOX-RES framework, and extended to account for 
+%general quark masses as well as different flavour-number schemes by implementing
+%variable number of light quark flavours.
 
 \begin{table}[b!]
 \begin{center}
 \includegraphics[width=1\linewidth]{plots/bb_table.pdf}
-\caption{$B$-hadron cross sections in $\mu$b.}
+\caption{$B$-hadron cross sections for various experimental setups ($\mu$b).}
 \label{tab:bb}
 \end{center}
 \end{table}
 
-The $b\bar b$ \minnlo{}  generator has been developed in \citere{Mazzitelli:2023znt} and employed for 
+The $b\bar b$ \minnlo{} generator has been developed in \citere{Mazzitelli:2023znt} and employed for 
 realistic predictions of $B$-hadron production in comparison to various LHC measurements.
-By and large, a remarkable description of the measured cross sections is achieved, 
-see \tab{tab:bb} for instance. We are currently finalizing a second study where we 
-consider $b$-jet observables using our $b\bar b$ \minnlo{} simulation as
-well as massless (and massive) NLO+PS dijet simulations. In this context, 
-algorithms to appropriately define the bottom flavour in jets play a crucial role, see
-\citere{Gauld:2022lem} for instance, and we find that the by far dominant effect 
-of the difference with to the standard $b$-tagging algorithms used by the experiments
-stems from the treatment of $g\to b\bar b$ splittings.
+By and large, a remarkable description of the measured cross sections is achieved, as reported in~\tab{tab:bb}. 
+%see \tab{tab:bb} for instance. 
+We are currently finalizing a second study where we 
+consider $b$-jet observables using our $b\bar b$ \minnlo{} simulation.
+%, as well as massless (and massive) NLO+PS dijet simulations. 
+%
 A preliminary comparison of our \minnlo{} predictions against ATLAS data is given in 
 \fig{fig:bb}.
+%
+The developed generator also opens the possibility to study how the definition of the jet flavour (e.g. \citere{Gauld:2022lem}) can impact and limit the precision of the theory simulations.
+This has potential implications for the choice of flavour tagging algorithms used by LHC experiments.
+% and we find that the by far dominant effect 
+%of the difference with to the standard $b$-tagging algorithms used by the experiments
+%stems from the treatment of $g\to b\bar b$ splittings.
+%
+
 
 \begin{figure}[t]
 \begin{center}
@@ -129,36 +138,45 @@ A preliminary comparison of our \minnlo{} predictions against ATLAS data is give
 \end{center}
 \end{figure}
 %
-\subsubsection[$D$-meson processes at NNLO+PS and prompt neutrino background]{\boldmath{$D$}-meson processes at NNLO+PS \mbox{and prompt neutrino background}}
+\subsubsection[$D$-meson processes at NNLO+PS and prompt neutrino backgrounds]{\boldmath{$D$}-meson processes at NNLO+PS \mbox{and prompt neutrino backgrounds}}
 \begin{Namen}
 R. Gauld, T. Giani, A. Mahr, A. Ratti, M. Wiesemann, G. Zanderighi
 \end{Namen}
 
-Another important application of the developed \minnlo{} methology is the production
-of a charm-quark pair ($c\bar c$) 
-in hadron--hadron collisions. While this process also receives
-substantial attention by the current LHC experiments, additionally it plays a crucial role in 
-the envisaged forward-physics experiments, in particular FASER. Even more crucially,
-it is source of a major background to neutrino telescopes, such as ICECUBE, namely
-the atmospheric prompt neutrino flux.
-In all cases, the underlying mechanism is to produce charm quarks through the collision
+Another important application of the developed \minnlo{} methology is to the production
+of a charm-quark pair ($c\bar c$) in hadron--hadron collisions. 
+%
+Experimental studies of the production rates of charm production in $pp$, $pA$ and $AA$ collisions are carried out by the LHC experiments, and the interpretation of their data is relevant for our understanding of both nuclear and proton structure, as well as providing unique information on states of matter such as the quark gluon plasma.
+%
+%This process is relevant for all LHC experiments. 
+%While this process also receives
+%substantial attention by the current LHC experiments, additionally it plays a crucial role in 
+%the envisaged forward-physics experiments, in particular FASER. ]
+%
+%Even more crucially, it is source of a major background to neutrino telescopes, such as ICECUBE, namely
+%the atmospheric prompt neutrino flux.
+%
+Furthermore, charm hadron-hadron production is also relevant for neutrino telescopes, such as IceCube, as knowledge of the rate of the prompt atmospheric neutrino flux (induced by charm production in the atmosphere) is essential for studies of neutrinos of cosmic origin.
+%
+In all of these cases, the underlying mechanism is the production of charm quarks through the collision
 of hadrons (either in a controlled collider environment or through cosmic rays interactions 
-with the atmosphere), and the charm quarks then hadronize to $D$-mesons. Finally, in 
-their further decay process highly energetic neutrinos are produced.
+with the atmosphere), and the charm quarks then hadronize to $D$-mesons. In the case of atmospheric charm production, 
+semi-leptonic decays then generate a flux of high energy neutrinos. 
+%their further decay process highly energetic neutrinos are produced.
 
 We have implemented a \minnlo{} generator for $c\bar c$ production to compute
-$D$-meson cross sections at NNLO+PS. Moreover, we have started to study 
+$D$-meson cross sections at NNLO+PS. Moreover, we have begun to study 
 the propagation of particles through the the atmosphere through cascade equation
 based on the code Matrix Cascade Equations (MCEq) \cite{Fedynitch:2015zbe} to compute the prompt
 atmospheric neutrino flux. In \fig{fig:neutrinoflux} the prompt atmospheric (electron) neutrino
 flux is shown as a function of the neutrino energy comparing our LO and NLO+PS
-inputs to the default MCEq results. As can be seen, the NLO corrections are substantial.
+inputs to the default ones of MCEq. As can be seen, the NLO corrections are substantial.
 Moreover, the perturbative scale uncertainties (not shown here) are similarly large, 
 jeopardizing the precision of the predictions for the neutrino flux. 
 This is a severe limitation, which calls for the inclusion of higher-order corrections.
 By upgrading these predictions with NNLO accuracy for $c\bar c$ production of 
 our \minnlo{} generator we hope to significantly improve the estimation of the 
-prompt atmospheric neutrino background in ICECUBE in terms of both accuracy and
+prompt atmospheric neutrino background in IceCube in terms of both accuracy and
 precision.
 
 \begin{figure}[b!]
@@ -182,9 +200,9 @@ account for the general kinematics of the final state, since the two heavy quark
 
 With this work, we have paved the way for a number of new NNLO+PS calculations, involving processes with two heavy quarks (top, bottom, charm) 
 and one or more colour singlet bosons ($Z$, $W$, Higgs) including their decays. In fact, even the full off-shell process of top-quark pair production 
-and decay belongs into that category. As a first application, we have considered the associated production of two bottom quarks and a $Z$ boson ($b\bar{b}Z$)
-in the four-flavour scheme (4FS) \cite{Mazzitelli:2024ura}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data 
-and with five-flavour scheme (5FS) predictions. As one can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and the necessary to describe LHC data.
+and decay belongs to that category. As a first application, we have considered the associated production of two bottom quarks and a $Z$ boson ($b\bar{b}Z$)
+in the four-flavour scheme (4FS) \cite{Mazzitelli:2024ura}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data and with five-flavour scheme (5FS) predictions. 
+As can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and are necessary to describe LHC data.
 
 \begin{figure}[bh]
 \begin{center}
@@ -199,7 +217,14 @@ and with five-flavour scheme (5FS) predictions. As one can be observed in \fig{f
 \begin{Namen}
 C. Biello, R. Gauld, A. Sankar, M. Wiesemann, G. Zanderighi
 \end{Namen}
-Higgs production associated with bottom quarks (\bbH{}) is a rare production mode at the LHC, serving as an irreducible background in Higgs-pair searches and gaining potential enhancement in BSM scenarios. Precise predictions of this process are important not only for experimental comparisons but also as a theoretical laboratory for studying heavy-quark effects. In processes involving bottom quarks, predictions can be obtained using different approaches to mass effects. In the scheme with 5FS, the bottom-quark component of the proton is perturbatively generated, enabling the resummation of large logarithmic contributions in the bottom mass. This approach treats the bottom quark as a massless parton, allowing for efficient high-order calculations. In~\citere{Biello:2024vdh}, we presented the first NNLO+PS simulation of this process within the massless scheme. For a more detailed description of bottom-quark kinematics, an alternative approach considers the production of massive bottom quarks in the hard scattering process, along with the Higgs boson, with four massless flavours (4FS). While computationally more demanding, this approach retains all mass effects order by order in perturbative QCD. Working in the \minnlo{} framework, which enables NNLO-accurate predictions for heavy-quark pair production in generic kinematics, we accessed the NNLO corrections in the massive scheme and matched them with a parton shower simulation~\cite{Biello:2024pgo}. Strong tensions between the massless and massive schemes in \bbH{} were observed in the past at lower accuracy, whereas a better agreement is found between the two NNLO+PS predictions, as shown in~\fig{phenofig:bbH}. The two schemes capture complementary aspects of bottom-quark dynamics. A generalised mass-variable flavour number scheme is desirable to achieve precise predictions across the full phase space. Using the method developed in~\citere{Gauld:2021zmq}, we are investigating the isolation of mass power corrections within the massive scheme, aiming to incorporate them into the massless prediction. This would allow us to retain the logarithmic resummation benefits of the massless scheme while systematically accounting for missing power corrections.
+Higgs production in association with bottom quarks (\bbH{}) is a rare production mode at the LHC, serving as an irreducible background in Higgs-pair searches and potentially gaining enhancement in BSM scenarios. 
+Precise predictions of this process are important not only for experimental comparisons but also serve as a theoretical laboratory for studying heavy-flavour quark effects. 
+In processes involving bottom quarks, predictions can be obtained using different approaches to mass effects. In the 5FS scheme, the bottom-quark component of the proton is perturbatively generated, enabling the resummation of large logarithmic contributions in the bottom mass. 
+This approach treats the bottom quark as a massless parton, allowing for efficient high-order calculations. In~\citere{Biello:2024vdh}, we presented the first NNLO+PS simulation of this process within the massless scheme. For a more detailed description of bottom-quark kinematics, an alternative approach considers the production of massive bottom quarks in the hard scattering process, along with the Higgs boson, with the four lighter flavoures treated as massless (4FS). 
+While computationally more demanding, this latter approach retains all mass effects order by order in perturbative QCD. Working in the \minnlo{} framework, which enables NNLO-accurate predictions for heavy-quark pair production in generic kinematics, we accessed the NNLO corrections in the massive scheme and matched them with a parton shower simulation~\citere{Biello:2024pgo}. 
+Strong tensions between the predictions in either massless or massive schemes in \bbH{} were observed in the past (at lower perturbative orders), 
+whereas a better agreement is found between the two NNLO+PS predictions, as shown in~\fig{phenofig:bbH}. 
+The two schemes capture complementary aspects of bottom-quark dynamics. A generalised mass-variable flavour number scheme is desirable to achieve precise predictions across the full phase space. Using the method developed in~\citere{Gauld:2021zmq}, we are investigating the isolation of mass power corrections within the massive scheme, aiming to incorporate them into the massless prediction. This would allow us to retain the logarithmic resummation benefits of the massless scheme while systematically accounting for missing power corrections in the bottom quark mass.
 
 \begin{figure}[phtb]
 \begin{center}
@@ -221,7 +246,7 @@ M. Ebert, M. Wiesemann, G. Zanderighi, S. Zanoli
 \end{Namen}
 Despite processes involving light jets in the final state building a 
 central class of LHC reactions, no NNLO+PS generators exist for any of them.
-With the work of \citere{Ebert:2024zdj}, we initiated the further extension of the \minnlo{} method by
+With the work of \citere{Ebert:2024zdj}, we have initiated the further extension of the \minnlo{} method by
 formulating it in terms of the $N$-jettiness variable. This jet-resolution variable,
 in principle, enables the treatment of any $N\ge 0$ jets in the final state within the 
 NNLO+PS matching. In \citere{Ebert:2024zdj} we considered the case $N=0$, namely colour-singlet
@@ -247,8 +272,8 @@ Although, by and large,
 QCD perturbation theory provides the dominant corrections at hadron 
 colliders due to the size of the strong coupling at the relevant energies, 
 electroweak (EW) effects are indispensable for the precision programme of the LHC.
-In certain phase-space regions EW corrections can even be dominant. This is the case
-when obsevables become sensitive to photon radiation, e.g. for invariant-mass 
+In certain phase-space regions EW corrections can even become dominant. This is the case
+when observables become sensitive to photon radiation, e.g. for invariant-mass 
 distribution of a group of leptons, or in the high-energy tails of kinematical distributions,
 where EW Sudakov logarithms yield substantial effects.
 
@@ -264,10 +289,10 @@ As an example, \fig{fig:WZ} shows the crucial importance of photon radiation
 to describe the Z-boson line shape (cf. difference with 
 red dash-dotted line in first ratio inset, which is the pure QCD prediction).
 
-Currently, we are working on a more sophisticated inclusion of EW effects 
+Currently, we are working towards a more sophisticated inclusion of EW effects 
 by accounting for NLO EW corrections for $WZ+jet$ production
-directly within the \minnlo{} formulae. We then supplement the all-order treatment 
-with QED effects to reach NLO EW also for inclusive $WZ$ observables without
+directly within the \minnlo{} formulae. We then aim to supplement the all-order treatment 
+with QED effects to reach NLO EW accuracy for inclusive $WZ$ observables without
 extra jets. This approach is currently developed and tested for the Drell-Yan process.
 
 
@@ -282,8 +307,8 @@ sensitivity to new physics.
 %
 Starting from recent developments in polarised-boson simulation based
 on the helicity selection at the amplitude level,
-ref.~\cite{Pelliccioli:2023zpd} presents a calcualtions and simulation
-of inclusive bison processes (WZ, ZZ and WW). A phenomenological
+ref.~\cite{Pelliccioli:2023zpd} presents a calcualtion and simulation
+of inclusive diboson processes (WZ, ZZ and WW). A phenomenological
 analysis in realistic LHC setups, as well as a comparison with recent
 ATLAS measurements, are presented.
 
@@ -292,7 +317,7 @@ multi-boson processes and in measuring quantum entanglement at high
 energies, ref.~\cite{Grossi:2024jae} studies polarisation and
 spin-correlation coefficients in di-boson systems. It is shown that
 higher-order corrections of QCD and electroweak type, off-shell
-modeling, and realistic effects such as fiducial selections and
+modelling, and realistic effects such as fiducial selections and
 neutrino reconstruction are unavoidable to properly determine such
 coefficients, and consequently to provide a sound interpretation of
 observables sensitive to quantum entanglement and Bell-inequality
@@ -303,6 +328,8 @@ production or coming from Higgs-boson decays.
 \printbibliography[heading=subbibliography]
 \end{refsection}
 
+
+%%% RG: here
 \subsection{Fixed-order predictions for the hadron--hadron collisions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{refsection}

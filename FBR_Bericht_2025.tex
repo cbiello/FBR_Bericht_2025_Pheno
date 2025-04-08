@@ -100,7 +100,7 @@ general quark masses as well as different flavour-number schemes by implementing
 variable number of light quark flavours.
 
 
-\begin{table}[b!]
+\begin{table}[tbh]
 \begin{center}
 \includegraphics[width=1\linewidth]{plots/bb_table.pdf}
 \caption{$B$-hadron cross sections in $\mu$b.}
@@ -121,7 +121,7 @@ stems from the treatment of $g\to b\bar b$ splittings.
 A preliminary comparison of our \minnlo{} predictions against ATLAS data is given in 
 \fig{fig:bb}.
 
-\begin{figure}[t]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.95\linewidth]{plots/bjet_mbb.pdf}
 \caption{Invariant-mass distribution of leading $b$-jets for \minnlo{} (blue), \minlo{} (grey).}
@@ -146,6 +146,15 @@ of hadrons (either in a controlled collider environment or through cosmic rays i
 with the atmosphere), and the charm quarks then hadronize to $D$-mesons. Finally, in 
 their further decay process highly energetic neutrinos are produced.
 
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/cc_neutrino_flux.pdf}
+\caption{Prompt electron neutrino flux as a function of the neutrino energy.}
+\label{fig:neutrinoflux}
+\end{center}
+\end{figure}
+
 We have implemented a \minnlo{} generator for $c\bar c$ production to compute
 $D$-meson cross sections at NNLO+PS. Moreover, we have started to study 
 the propagation of particles through the the atmosphere through cascade equation
@@ -161,13 +170,6 @@ our \minnlo{} generator we hope to significantly improve the estimation of the
 prompt atmospheric neutrino background in ICECUBE in terms of both accuracy and
 precision.
 
-\begin{figure}[b!]
-\begin{center}
-\includegraphics[width=0.95\linewidth]{plots/cc_neutrino_flux.pdf}
-\caption{Prompt electron neutrino flux as a function of the neutrino energy.}
-\label{fig:neutrinoflux}
-\end{center}
-\end{figure}
 
 %
 \subsubsection[\minnlo{} method for heavy-quark plus colour-singlet production and application to $b\bar{b}Z$ process]{\minnlo{} method for heavy-quark plus colour-singlet production and the \boldmath{$b\bar{b}Z$} process}
@@ -175,6 +177,15 @@ precision.
 M. Wiesemann
 \end{Namen}
 %
+
+\begin{figure}[b!]
+\begin{center}
+\includegraphics[width=0.95\linewidth]{plots/bbZ_ptbjet.pdf}
+\caption{$b$-jet $p_T$ spectrum of \minnlo{} (red), NLO+PS (blue) and CMS data (black).}
+\label{fig:bbZ}
+\end{center}
+\end{figure}
+
 Just recently, we have derived the extension of the \minnlo{} formalism to deal with the production of a heavy quark pair and a colour singlet \cite{Mazzitelli:2024ura}.
 It is based on the resummation formula for the transverse momentum of the final-state system as in previous \minnlo{} 
 formulations. Although the resummation formula has the same structure as for a heavy quark pair, we had to correctly
@@ -186,13 +197,6 @@ and decay belongs into that category. As a first application, we have considered
 in the four-flavour scheme (4FS) \cite{Mazzitelli:2024ura}. With this calculation we have solved the long-standing tension between NLO 4FS predictions with data 
 and with five-flavour scheme (5FS) predictions. As one can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and the necessary to describe LHC data.
 
-\begin{figure}[bh]
-\begin{center}
-\includegraphics[width=0.95\linewidth]{plots/bbZ_ptbjet.pdf}
-\caption{$b$-jet $p_T$ spectrum of \minnlo{} (red), NLO+PS (blue) and CMS data (black).}
-\label{fig:bbZ}
-\end{center}
-\end{figure}
 
 
 \subsubsection{Associated Higgs production with bottom quarks: a flavour-scheme study at NNLO+PS}

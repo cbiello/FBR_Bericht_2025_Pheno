@@ -348,17 +348,6 @@ processes, at the level of both fixed-order calculations and fully exclusive eve
 since many years. 
 
 
-\subsubsection{Higgs Boson Production in Association with a Top-Antitop Quark at NNLO}
-\begin{Namen}
- J. Mazzitelli 
-\end{Namen}
-
-The associated production of a Higgs boson with a top-antitop quark pair is a crucial process at the LHC since it allows for a direct measurement of the top-quark Yukawa coupling. Ref.~\cite{Catani:2022mfv} presents the computation of the radiative corrections to this process at NNLO. This is the very first computation for a $2 \to 3$  process with massive colored particles at this perturbative order. A soft Higgs boson approximation for loop amplitudes is developped, which enables one to reliably quantify the impact of the yet unknown two-loop contribution. It is foudn that at LHC collisions at the center-of-mass energy $s=13$\,TeV, the NNLO corrections increase the NLO result for the total cross section by about 4\% and lead to a significant reduction of perturbative uncertainties.
-
-
-
-
-
 \subsubsection{Quark-mass effects in Higgs production at NNLO}
 \begin{Namen}
 M. Niggetiedt
@@ -367,20 +356,30 @@ M. Niggetiedt
 
 Gluon fusion is the predominant channel for the production of a Higgs boson at the LHC. This makes a firm understanding of the process and corresponding observables mandatory for current and future precision Higgs physics. Enormous efforts have been devoted to the precise theoretical description of the total inclusive gluon fusion cross section. It is important to emphasize that in the Standard Model the Higgs boson is the only particle featuring Yukawa interactions with fermions. Therefore, minimizing the associated theory uncertainties is of paramount importance as theory predictions for Higgs observables have a direct impact on the extraction of couplings and masses from experimental measurements.
 
-A comprehensive analysis of the gluon fusion cross section by the LHC Higgs Working Group identified different sources of theory uncertainty which sum up to roughly $6\%$ uncertainty. About one third of uncertainty is attributed to missing quark-mass effects at NNLO in QCD.
+A comprehensive analysis of the gluon fusion cross section by the LHC Higgs Working Group identified different sources of theory uncertainty which sum up to roughly $6\%$ uncertainty. About one third of this uncertainty is attributed to missing quark-mass effects at NNLO in QCD: a lack of exact knowledge of top quark and bottom quark mass effects at the cross-section level.
 
-We have put forward the exact description of the previously unknown quark-mass effects at NNLO QCD in \cite{Czakon:2021yub} where the top-quark mass effects on the total Higgs production cross section have been addressed. Our analysis revealed that finite top-quark mass effects beyond the well-established rescaled heavy-top limit give rise to a small shift of $-0.32\%$ on the total cross section at $13\,\mathrm{TeV}$ and $-0.16\%$ at $8\,\mathrm{TeV}$ \cite{Czakon:2021yub}. This result confirms and at the same time eliminates the commonly accepted uncertainty estimate arising from the lack of knowledge of top-quark mass effects.
+An exact description of top-quark mass effects has been previously presented in~\citere{Czakon:2021yub} while the role of bottom-quark-mass effects was unknown. Although, mass effects of the lighter quark flavors are suppressed due to the Yukawa coupling to the Higgs boson, interference effects between the top and bottom quark have been estimated to be of the order of $1\%$. 
 
-Although, mass effects of the lighter quark flavors are suppressed due to the Yukawa coupling to the Higgs boson, interference effects between the top and bottom quark have been estimated to be of the order of $1\%$. For the determination of interference effects the efficient evaluation of two-loop H+jet amplitudes with a massive bottom flavor is required. We have developed and implemented semi-analytical techniques to overcome numerical instabilities when solving the relevant Feynman integrals even at the edges of the physical phase space.
+To overcome this, knowledge of the two-loop amplitudes for the H+jet process and three-loop amplitude for the $gg \to H$ amplitude including bottom-quark-mass effects have been obtained~\citere{Czakon:2023kqm,Niggetiedt:2023uyk}. In a first study \cite{Czakon:2023kqm} top-bottom interference contribution to the fully inclusive Higgs production cross section at NNLO in QCD has been evaluated. The effect of the interference turned out to be $-1.99(1)^{+0.30}_{-0.15}$~pb at $13\,\mathrm{TeV}$ as a result of non-trivial cancellations between the pure NLO and NNLO corrections. In particular, the $\mathcal{O}(\alpha_s^4)$ corrections amount to $0.43$~pb almost completely compensating the NLO shift.
 
-Additionally, when considering NNLO QCD corrections with two massive quark flavors, a new class of Feynman diagrams emerges in the three-loop virtual corrections to the $gg \to H$ amplitude. We have derived deep asymptotic expansions of the corresponding amplitude which converge in the parameter space relevant for the assessment of interference effects between the top and the bottom quark and numerically sampled the domains not accessible with the expansions \cite{Niggetiedt:2023uyk}.
+Further studies on the dependence of the renormalisation scheme as well as the impact of quark mass effects on differential distributions has been carried out in~\citere{Czakon:2024ywb}. The differential results indicate sensitivity to the choice of bottom-quark mass renormalisation scheme in certain kinematic regions, and a corresponding NNLO calculation matched to parton shower is work in progress to further investigate such effects.
 
-The new two-loop amplitudes for the H+jet process with full quark-mass dependence have been combined with the aforementioned three-loop double-virtual corrections and the one-loop double-real corrections. In a first study \cite{Czakon:2023kqm} we have evaluated the top-bottom interference contribution to the fully inclusive Higgs production cross section at NNLO in QCD. The effect of the interference turned out to be $-1.99(1)^{+0.30}_{-0.15}$~pb at $13\,\mathrm{TeV}$ as a result of non-trivial cancellations between the pure NLO and NNLO corrections. In particular, the $\mathcal{O}(\alpha_s^4)$ corrections amount to $0.43$~pb almost completely compensating the NLO shift.
+%We have put forward the exact description of the previously unknown quark-mass effects at NNLO QCD in \cite{Czakon:2021yub} where the top-quark mass effects on the total Higgs production cross section have been addressed. Our analysis revealed that finite top-quark mass effects beyond the well-established rescaled heavy-top limit give rise to a small shift of $-0.32\%$ on the total cross section at $13\,\mathrm{TeV}$ and $-0.16\%$ at $8\,\mathrm{TeV}$ \cite{Czakon:2021yub}. This result confirms and at the same time eliminates the commonly accepted uncertainty estimate arising from the lack of knowledge of top-quark mass effects.
 
-We note that the aforementioned numbers have been obtained with quark masses renormalized in the on-shell scheme and employing the 5-flavor scheme. To conclusively determine the effect of the top-bottom interference on the gluon-fusion process, we have performed a thorough analysis of the total cross section and more differential quantities making use of different renormalization and flavor schemes \cite{Czakon:2024ywb}. We have found excellent agreement between the 5-flavor and 4-flavor scheme for the interference contribution, justifying the treatment of the bottom-quark mass in the 5-flavor scheme. Our computation in two different renormalization schemes showed that renormalizing the bottom-quark mass in the $\overline{\mathrm{MS}}$ scheme results in significantly smaller scale uncertainties and displays a better perturbative convergence. The renormalization of the top-quark mass on the other hand does not impact the cross section significantly.
+%For the determination of interference effects the efficient evaluation of two-loop H+jet amplitudes with a massive bottom flavor is required. To achieve this, and building upon~\citere{Czakon:2021yub}, techniques have been developed to overcome numerical instabilities when solving the relevant Feynman integrals even at the edges of the physical phase space.
 
-Furthermore, we have provided differential distributions for the Higgs rapidity as well as for the $p_T$ of the Higgs boson. The differential results revealed that the sensitivity of the cross section on the choice of renormalization scheme for the bottom-quark mass originates from the low-$p_T$ region where also non-perturbative effects must be taken into account. The corresponding NNLO calculation matched to parton shower is work in progress and particularly aims for a precise description of the light-quark mass effects, and we reckon that it will be a useful addition to ongoing and future experimental analyses.
+%Additionally, when considering NNLO QCD corrections with two massive quark flavors, a new class of Feynman diagrams emerges in the three-loop virtual corrections to the $gg \to H$ amplitude. We have derived deep asymptotic expansions of the corresponding amplitude which converge in the parameter space relevant for the assessment of interference effects between the top and the bottom quark and numerically sampled the domains not accessible with the expansions \cite{Niggetiedt:2023uyk}.
+
+%The new two-loop amplitudes for the H+jet process with full quark-mass dependence have been combined with the aforementioned three-loop double-virtual corrections and the one-loop double-real corrections. In a first study \cite{Czakon:2023kqm} top-bottom interference contribution to the fully inclusive Higgs production cross section at NNLO in QCD has been evaluated. The effect of the interference turned out to be $-1.99(1)^{+0.30}_{-0.15}$~pb at $13\,\mathrm{TeV}$ as a result of non-trivial cancellations between the pure NLO and NNLO corrections. In particular, the $\mathcal{O}(\alpha_s^4)$ corrections amount to $0.43$~pb almost completely compensating the NLO shift.
+
+% RG new version
+%Further studies on the dependence of the renormalisation scheme as well as the impact of quark mass effects on differential distributions has been carried out in~\citere{Czakon:2024ywb}. The differential results indicate sensitivity to the choice of bottom-quark mass renormalisation scheme in certain kinematic regions, and a corresponding NNLO calculation matched to parton shower is work in progress to further investigate such effects.
+
+%We note that the aforementioned numbers have been obtained with quark masses renormalized in the on-shell scheme and employing the 5-flavor scheme. To conclusively determine the effect of the top-bottom interference on the gluon-fusion process, we have performed a thorough analysis of the total cross section and more differential quantities making use of different renormalization and flavor schemes \cite{Czakon:2024ywb}. We have found excellent agreement between the 5-flavor and 4-flavor scheme for the interference contribution, justifying the treatment of the bottom-quark mass in the 5-flavor scheme. Our computation in two different renormalization schemes showed that renormalizing the bottom-quark mass in the $\overline{\mathrm{MS}}$ scheme results in significantly smaller scale uncertainties and displays a better perturbative convergence. The renormalization of the top-quark mass on the other hand does not impact the cross section significantly.
+
+%Furthermore, we have provided differential distributions for the Higgs rapidity as well as for the $p_T$ of the Higgs boson. The differential results revealed that the sensitivity of the cross section on the choice of renormalization scheme for the bottom-quark mass originates from the low-$p_T$ region where also non-perturbative effects must be taken into account. The corresponding NNLO calculation matched to parton shower is work in progress and particularly aims for a precise description of the light-quark mass effects, and we reckon that it will be a useful addition to ongoing and future experimental analyses.
 %
+
 \subsubsection{Full top-mass dependence in Higgs production at NNLO+PS}
 \begin{Namen}
 M. Niggetiedt, M. Wiesemann
@@ -411,13 +410,7 @@ novel full-theory results. These results will be useful to provide well-motivate
 approximations of top-mass effects beyond NNLO. Currently, we are extending 
 our \minnlo{} calculation by the complete dependence on light-quark mass 
 effects (bottom and charm) up to NNLO.
-%
-\subsubsection{Beyond the leading-power}
-\begin{Namen}
-A. Sankar
-\end{Namen}
-%
-I worked on the study of next-to-soft threshold effects—commonly referred to as next-to-leading power (NLP) terms—in the context of scalar and pseudo-scalar Higgs production, with the results published in~\cite{Das:2024pac} and~\cite{Ravindran:2023qae}, respectively. In these works, we computed all-order NLP resummed corrections within perturbative QCD and performed extensive phenomenological analyses to study the impact of NLP resummation on Higgs production at the LHC.
+
 %
 \subsubsection{VBF $H\rightarrow b\bar{b}$ production}
 \begin{Namen}
@@ -434,14 +427,14 @@ Following developments where the production \cite{Asteriadis:2021gpd} and decay
 \cite{Behring:2019oci} have been studied separately at NNLO in QCD, we combined
 these descriptions in Ref.~\cite{Asteriadis:2024nbg} in the narrow-width
 approximation.
-
+%
 It turned out that the NNLO corrections for the fiducial cross-section at NNLO
-show only slow perturbative convergence. This came as a surprise since neither
-the production nor the decay, when considered separately, show such a
-behaviour. In particular, this raises concerns whether a description at NNLO in
-QCD is sufficient for accurate predictions of this process.
-
-In Ref.~\cite{steriadis:2024nbg} we managed to trace this back to an interplay
+show only slow perturbative convergence. 
+%This came as a surprise since neither
+%the production nor the decay, when considered separately, show such a
+%behaviour. In particular, this raises concerns whether a description at NNLO in
+%QCD is sufficient for accurate predictions of this process.
+In Ref.~\cite{Asteriadis:2024nbg} we managed to trace this back to an interplay
 of additional radiation from the Higgs decay at higher perturbative orders with
 the definition of the fiducial cuts. These cuts (inspired by an analogous ATLAS
 analysis), include a cut on the transverse momentum of the subleading $b$ jet
@@ -450,22 +443,22 @@ where the transverse momentum spectrum is steeply falling, and therefore makes
 observables with this cut highly susceptible to additional radiation added by
 higher-order corrections.
 
-This observation led us to ask the question whether effects from this
-additional radiation could already be captured by a parton shower description
-of the decay process. In particular it is interesting whether a NNLO
-description matched to a parton shower shows better perturbative convergence.
+This observation has led us to ask the question whether effects from this additional radiation could already be captured by a parton shower description
+of the decay process. % In particular it is interesting whether a NNLO description matched to a parton shower shows better perturbative convergence.
+%
+Given the expertise with parton-shower-matched calculation in the group at MPP, it was natural to join forces and combine the NNLO+PS calculation for $H \to b\bar{b}$ decays from Ref.~\cite{Bizon:2019tfo} with the NNLO description for VBF from Ref.~\cite{Asteriadis:2021gpd}. This project is currently ongoing.
 
-Given the expertise with parton-shower-matched calculation in the group at MPP,
-it was natural to join forces and combine the NNLO+PS calculation for $H \to
-b\bar{b}$ decays from Ref.~\cite{Bizon:2019tfo} with the NNLO description for
-VBF from Ref.~\cite{Asteriadis:2021gpd}. This project is currently ongoing.
+\subsubsection{Higgs Boson Production in Association with a Top-Antitop Quark at NNLO}
+\begin{Namen}
+ J. Mazzitelli 
+\end{Namen}
 
+The associated production of a Higgs boson with a top-antitop quark pair is a crucial process at the LHC since it allows for a direct measurement of the top-quark Yukawa coupling. Ref.~\cite{Catani:2022mfv} presents the computation of the radiative corrections to this process at NNLO. This is the very first computation for a $2 \to 3$  process with massive colored particles at this perturbative order. A soft Higgs boson approximation for loop amplitudes is developped, which enables one to reliably quantify the impact of the yet unknown two-loop contribution. It is foudn that at LHC collisions at the center-of-mass energy $s=13$\,TeV, the NNLO corrections increase the NLO result for the total cross section by about 4\% and lead to a significant reduction of perturbative uncertainties.
 
 \subsubsection{Di-Higgs production at NNLO+PS}
 \begin{Namen}
 F. Garosi, S. Kumar, M. Wiesemann, G. Zanderighi
 \end{Namen}
-
 Our best opportunity to access the Higgs potential at the LHC is through the measurement
 of a pair of Higgs bosons. Di-Higgs production is directly sensitive to the trilinear Higgs coupling,
 allowing us to put bounds on its value and possibly even measuring its size with the full HL-LHC data.
@@ -476,6 +469,17 @@ the full-theory NLO predictions with calculations in the heavy-top limit, it is 
 meaningful approximations of the NNLO cross section. Following this idea, we are currently 
 implementing a new NNLO+PS generator for Higgs-pair production using the \minnlo{} method.
 
+%
+\subsubsection{Beyond the leading-power}
+\begin{Namen}
+A. Sankar
+\end{Namen}
+%
+The fixed-order description of Higgs boson production at the LHC often receives large numerical contributions from kinematic regions (close to threshold) involving soft logarithmic enhancements. The impact of next-to-soft --- commonly referred to as next-to-leading power (NLP) terms --- can also lead to large numerical effects.
+%
+The impact of such terms has been computed via all-order NLP resummed corrections an applied to the case of the SM Higgs boson~\citere{Das:2024pac} as well as a (BSM) pseudo-scalar Higgs boson~\citere{Ravindran:2023qae}. In both cases, extensive phenomenological analyses to study the impact of NLP resummation on Higgs production at the LHC have been presented.
+
+%I worked on the study of next-to-soft threshold effects—commonly referred to as next-to-leading power (NLP) terms—in the context of scalar and pseudo-scalar Higgs production, with the results published in~\cite{Das:2024pac} and~\cite{Ravindran:2023qae}, respectively. In these works, we computed all-order NLP resummed corrections within perturbative QCD and performed extensive phenomenological analyses to study the impact of NLP resummation on Higgs production at the LHC.
 
 \printbibliography[heading=subbibliography]
 \end{refsection}

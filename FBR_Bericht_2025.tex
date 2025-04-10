@@ -45,8 +45,10 @@
 Director: Prof. Dr. G. Zanderighi
 \end{Namen}
 
+{\color{red}{RG: The research focus of this group is the development of tools and methods which push the theoretical precision of collider physics predictions and event simulations, enabling more detailed comparisons between theory and experimental measurements.}}
+
 The research focus of this group is towards pushing the precision of
-theoretical predictions for colliders processes and providing
+theoretical predictions for collider processes and providing
 practical predictions and tools to be used for comparisons of data and
 theory.
 
@@ -311,14 +313,14 @@ sensitivity to new physics.
 %
 Starting from recent developments in polarised-boson simulation based
 on the helicity selection at the amplitude level,
-ref.~\cite{Pelliccioli:2023zpd} presents a calcualtion and simulation
+Ref.~\cite{Pelliccioli:2023zpd} presents a calcualtion and simulation
 of inclusive diboson processes (WZ, ZZ and WW). A phenomenological
 analysis in realistic LHC setups, as well as a comparison with recent
 ATLAS measurements, are presented.
 
 Motivated by the growing interest in accessing the spin structure of
 multi-boson processes and in measuring quantum entanglement at high
-energies, ref.~\cite{Grossi:2024jae} studies polarisation and
+energies, Ref.~\cite{Grossi:2024jae} studies polarisation and
 spin-correlation coefficients in di-boson systems. It is shown that
 higher-order corrections of QCD and electroweak type, off-shell
 modelling, and realistic effects such as fiducial selections and
@@ -457,7 +459,7 @@ The associated production of a Higgs boson with a top-antitop quark pair is a cr
 
 \subsubsection{Di-Higgs production at NNLO+PS}
 \begin{Namen}
-F. Garosi, S. Kumar, M. Wiesemann, G. Zanderighi
+F. Garosi, S. Jain, M. Wiesemann, G. Zanderighi
 \end{Namen}
 Our best opportunity to access the Higgs potential at the LHC is through the measurement
 of a pair of Higgs bosons. Di-Higgs production is directly sensitive to the trilinear Higgs coupling,
@@ -488,27 +490,50 @@ The impact of such terms has been computed via all-order NLP resummed correction
 \subsection{Development of methods for fixed-order calculations and their applications}
 \begin{refsection}
 
-Many of the phenomenological results discussed in the previous sections, such as those based on the \minnlo{} method, have relied on the availability of either fixed-order calculations or the perturbative ingredients of NNLO QCD calculations.
+Many of the phenomenological results discussed in the previous sections rely on the availability of fixed-order calculations or on various perturbative ingredients of NNLO QCD calculations.
 %
-In some of these cases, the precision of the available data from experiment already places more strong demands on the theory community.
+For some of the considered processes, the precision of the available data from experiment already exceeds that of the state-of-the art theory predictions which places strong demands on the theory community to improve.
 %
-The continued development of theoretical tools and methods is therefore critical to improve the modelling of the theory predictions. This remains an active research activity of our group, for example: towards automation of or going beyond NNLO QCD, the inclusion of quark mass effects, the efficient evaluation of Feynman integrals.
+The continued development of theoretical tools and methods is therefore critical to further improve the modelling of the available theory predictions. This remains an active research activity of our group. %, for example: the efficient evaluation of Feynman integrals, towards automation of or going beyond NNLO QCD, the inclusion of quark mass and flavour effects.  
+
+\subsubsection{Reclassifying Feynman Integrals as Special Functions}
+\begin{Namen}
+C. Wang
+\end{Namen}
+%
+The Feynman integral is a central object in the perturbation theory of quantum field theory, and its evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
+Intriguingly, various kinds of special functions in mathematics appear naturally in the computation of Feynman integrals.
+In~\cite{Liu:2023jkr}, we proposed a recipe for efficiently evaluating Feynman integrals through the auxiliary mass flow method and differential equations in the kinematic variable space.
+The efficient evaluation method available to Feynman integrals may also serve as a way of exploring the space of special functions.
+These developments have implications in both the theoretical study of amplitudes as well as their evaluation in phenomenological applications.
 
 \subsubsection{Infrared subtraction at NNLO in perturbative QCD}
 \begin{Namen}
 G. Pelliccioli, A. Ratti, C. Signorile-Signorile
 \end{Namen}
+% To achieve reliable theoretical predictions for key QCD processes, it is essential to explore higher orders in perturbation theory. This requires dealing with infrared (IR) singularities that arise from both virtual and real corrections. 
+The treatment of infrared and collinear singularities (IR) remains a key challenge of perturbative QCD calculations at the LHC.
 %
-To achieve reliable theoretical predictions for key QCD processes, it is essential to explore higher orders in perturbation theory. This requires dealing with infrared (IR) singularities that arise from both virtual and real corrections. While efficient and process-independent methods for handling IR singularities at next-to-leading order (NLO) in QCD were developed decades ago, a fully general solution at next-to-next-to-leading order (NNLO) remains elusive, despite significant progress over the past twenty years.
-As a result, numerous NNLO subtraction schemes continue to be developed and refined. In Ref.~\cite{Bertolotti:2022aih}, the \emph{local analytic sector subtraction} method was employed to demonstrate the cancellation of IR singularities for arbitrary processes at $e^+e^-$ colliders. This approach yields compact and fully analytic expressions, making it well-suited for direct numerical implementation. To date, it remains the only fully local and analytic subtraction scheme capable of achieving this level of generality for lepton scattering at NNLO in QCD.
+While efficient and process-independent methods for handling IR singularities at NLO in QCD were developed decades ago, a fully general solution at NNLO remains elusive, despite significant progress over the past twenty years.
+As a result, numerous NNLO subtraction schemes continue to be developed and refined. In Ref.~\cite{Bertolotti:2022aih}, the \emph{local analytic sector subtraction} method was employed to demonstrate the cancellation of IR singularities for arbitrary processes at $e^+e^-$ colliders. This approach yields compact and fully analytic expressions, making it well-suited for direct numerical implementation. 
+%To date, it remains the only fully local and analytic subtraction scheme capable of achieving this level of generality for lepton scattering at NNLO in QCD.
 More recently, Ref.~\cite{Magnea:2024jqg} marked the first steps toward extending this framework to N${}^3$LO, along with some complementary studies based on the factorisation properties of gauge amplitudes that can lead to interesting insights on the general organisation of subtraction schemes at all orders in perturbation theory.
-In parallel, addressing the growing demand for precision predictions in multi-parton processes at hadron colliders, the \emph{nested soft-collinear subtraction} scheme has been revisited to cope with $pp$ scatterings into arbitrary number of coloured and colourless partons. Notably, in Ref.\cite{Devoto:2023rpv} and~\cite{Devoto:2025kin}, 
+In parallel, addressing the growing demand for precision predictions in multi-parton processes at hadron colliders, the \emph{nested soft-collinear subtraction} scheme has been revisited to cope with $pp$ scatterings into arbitrary number of coloured and colourless partons. Notably, in Ref.~\cite{Devoto:2023rpv} and~\cite{Devoto:2025kin}, 
 a novel formulation of the \emph{nested soft-collinear subtraction} was presented. 
 A key feature of this revised approach is the identification of iterative structures within the subtraction terms,
 enabling significant simplifications in the intermediate steps of the calculations and ameliorating the physical transparency of the results. 
 Although not yet fully general, the approach outlined in these references represents an important milestone toward obtaining finite remainders of the integrated subtraction terms for generic hadron collider processes within the nested soft-collinear subtraction scheme.
-
-
+%
+\subsubsection{Soft function at N3LO}
+\begin{Namen}
+M. Delto, C. Wang
+\end{Namen}
+%
+%In the coming high luminosity LHC era, describing the highly precise differential cross-sections requires us to understand the intricate infrared structures of QCD at even higher perturbative order.
+%In order to produce meaningful cross-sections, we need to correctly subtract the spurious infrared divergences before integrating the amplitude over the phase space.
+The method of $N$-jettiness slicing offers a non-local approach to deal with the presence of unresolved QCD radiation, and has been successfully applied to several processes at NNLO QCD accuracy. It is not available at $\text{N}^{3}\text{LO}$ due to the absence of the soft function calculation.
+In~\cite{Baranowski:2024ene,Baranowski:2024vxg,Baranowski:2024ysi}, we completed the calculation of the last missing ingredient of the zero-jettiness slicing method for color-singlet production at $\text{N}^{3}\text{LO}$, marking our first step towards the $N$-jettiness slicing method for general colorful final states.
+Along the way, we developed several new computational techniques, such as the extended reverse unitarity method and the integral filtering method, which may find wider application in the field of precision calculation.
 %
 \subsubsection{Four-loop renormalisation of pseudoscalar operators}
 \begin{Namen}
@@ -519,28 +544,6 @@ The treatment of the chiral matrix $\gamma_5$ in loop diagrams within dimensiona
 
 In our study~\cite{Chen:2024cvu}, we have for the first time calculated the renormalization constant for a pseudoscalar operator regularized with a non-anticommuting $\gamma_5$ in dimensional regularization up to four-loop order in QCD. We have conducted a decomposition of the renormalization constant of the pseudoscalar operator, in order to separate explicitly the component that arises solely from $\gamma_5$-related symmetry-restoration. This facilitates the transformation to other (non-$\overline{\mathrm{MS}}$) renormalization schemes. Exploiting the renormalization-group invariance of the appropriately defined renormalization constant for this operator, we have been able to obtain the corresponding $\overline{\mathrm{MS}}$ factor at five-loop order in QCD. 
 %
-\subsubsection{Soft function at N3LO}
-\begin{Namen}
-M. Delto, C. Wang
-\end{Namen}
-%
-In the coming high luminosity LHC era, describing the highly precise differential cross-sections requires us to understand the intricate infrared structures of QCD at even higher perturbative order.
-In order to produce meaningful cross-sections, we need to correctly subtract the spurious infrared divergences before integrating the amplitude over the phase space.
-$N$-jettiness slicing is one of many ways to resolve this problem, but it is not available at $\text{N}^{3}\text{LO}$ due to the absence of the soft function calculation.
-In~\cite{Baranowski:2024ene,Baranowski:2024vxg,Baranowski:2024ysi}, we completed the calculation of the last missing ingredient of the zero-jettiness slicing method for color-singlet production at $\text{N}^{3}\text{LO}$, marking our first step towards the $N$-jettiness slicing method for general colorful final states.
-Along the way, we developed several new computational techniques, such as the extended reverse unitarity method and the integral filtering method, which may find wider application in the field of precision calculation.
-%
-\subsubsection{Reclassifying Feynman Integrals as Special Functions}
-\begin{Namen}
-C. Wang
-\end{Namen}
-%
-The Feynman integral is the central object in the perturbation theory of quantum field theory, and its evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
-Intriguingly, various kinds of special functions in mathematics appear naturally in the computation of Feynman integrals.
-In~\cite{Liu:2023jkr}, we proposed a recipe for efficiently evaluating Feynman integrals through the auxiliary mass flow method and differential equations in the kinematic variable space.
-The efficient evaluation method available to Feynman integrals may also serve as a way of exploring the space of special functions.
-%
-%
 \subsubsection{The $Q_{1,2}$--$Q_7$ interference contributions to $b \to s \gamma$ at ${\mathcal{O}}(\alpha_s^2)$ for the physical value of $m_c$}
 \begin{Namen}
 M. Niggetiedt
@@ -548,16 +551,16 @@ M. Niggetiedt
 %
 Rare $B$-meson decays provide important constraints on various BSM scenarios. Of particular interest in this context is the inclusive radiative decay $\bar{B}\to X_s\gamma$ which is currently measured with $5\%$ accuracy. %\cite{HeavyFlavorAveragingGroup:2022wzx,ParticleDataGroup:2022pth}. 
 For $E_\gamma > 1.6 \,\mathrm{GeV}$, the $\bar{B}\to X_s\gamma$ decay rate is well approximated by the perturbative decay $b\to X_s^p\gamma$ with $X_s^p = s,sg,sgg,sq\bar{q},\ldots$ as partonic final states. 
+
+In order to match the experimental accuracy, NLO electroweak as well as exact NNLO QCD (${\mathcal{O}}(\alpha_s^2)$) corrections need to be considered. %In previous studies, some of the important NNLO QCD corrections that depend on the mass of the charm quark have only been addressed in the unphysical limit $m_c \gg m_b$ \cite{Misiak:2010sk}, or for a massless charm quark \cite{Czakon:2015exa}. The approximate treatment of charm-quark mass effects induces $3\%$ uncertainty on top of the $3\%$ uncertainty due to missing higher orders and $2.5\%$ due to input parameters and non-perturbative effects. 
 %
-In order to match the experimental accuracy, NLO electroweak as well as NNLO QCD (${\mathcal{O}}(\alpha_s^2)$) corrections need to be considered. In previous studies, some of the important NNLO QCD corrections that depend on the mass of the charm quark have only been addressed in the unphysical limit $m_c \gg m_b$ \cite{Misiak:2010sk}, or for a massless charm quark \cite{Czakon:2015exa}. The approximate treatment of charm-quark mass effects induces $3\%$ uncertainty on top of the $3\%$ uncertainty due to missing higher orders and $2.5\%$ due to input parameters and non-perturbative effects. 
-%
-While currently, experimental measurements and theory prediction are in agreement, the ultimate Bell II luminosity will allow for high-statistics measurements pushing the accuracy below $5\%$. This necessitates the elimination of uncertainties due to charm-quark mass effects in theory. 
+%While currently, experimental measurements and theory prediction are in agreement, the ultimate Bell II luminosity will allow for high-statistics measurements pushing the accuracy below $5\%$. This necessitates the elimination of uncertainties due to charm-quark mass effects in theory. 
+In particular, the exact computation of charm mass effects, which currently constitute a dominant source of theory uncertainty of $3\%$, is necessary. This is motivated as the ultimate Belle II luminosity will allow for high-statistics measurements pushing the experimental accuracy below $5\%$
 %
 To this end, we have computed all four-loop Feynman diagrams for the $b \to s \gamma$ transition with massive bottom and charm quarks in the framework of reverse unitarity. Thereby, the calculation has been separated into the evaluation of partial amplitudes with two, three, and four cut propagators. The most challenging contribution involving two cut propagators has been the subject of our work \cite{Czaja:2023ren}. 
 %To deal with the high complexity of the underlying Feynman integrals, we have developed a semi-analytical technique based on differential equations, which allowed us to determine the desired amplitudes at high-precision. 
 %
 Our study constitutes a major step towards the full result for the $b \to s \gamma$ decay rate taking into account the exact charm-quark mass dependence at NNLO QCD. Meanwhile, the calculation of contributions with three and four cut propagators has been accomplished and the cancellation of UV and IR divergences when combined with the published results \cite{Czaja:2023ren} has been observed. A complete analysis including contributions from bremsstrahlung is currently in preparation. 
-%
 
 %
 \subsubsection{Z+c-jet at NNLO QCD}
@@ -565,12 +568,11 @@ Our study constitutes a major step towards the full result for the $b \to s \gam
 R. Gauld
 \end{Namen}
 %
-Another avenue of development is fixed-order calculations which take into account the full flavour information of scattering processes.
-Such a development was required for the computation of the process $pp \to Z + c-{\rm~jet}$, as presented in~\citere{Gauld:2023zlv}. 
+Another avenue of development is fixed-order calculations which take into account the full flavour information of scattering processes, propagated also at the level of (integrated) subtraction terms. Such a development was required for the computation of the process $pp \to Z + c-{\rm~jet}$, as presented in~\citere{Gauld:2023zlv}. 
 %
 This computation furthermore incorporated charm quark mass effects beyond the leading-power, which was achieved combining both massive and massless approaches to describe the scattering process.
 %
-These developments led to substantial improvements in the precision of the theory calculation. At the same time, open questions about the role of multiple-particle-interactions and the definition of jet-flavour in experimental analyses were also raised in this work.
+These developments led to substantial improvements in the precision of the theory calculation. At the same time, open questions about the role of multiple-particle-interactions and the definition of jet-flavour in experimental analyses were also raised. % in this work.
 
 
 \subsubsection{Top-mass renormalization in ttbar @ NNLO}
@@ -679,7 +681,7 @@ $\alpha_s$ together with the non-perturbative parameter $\alpha_0$ from
 event-shape and jet-shape distributions using power corrections
 computed for the first time in the three-jet region.
 %
-In ref.~\cite{Nason:2023asn} only ALEPH data at the $Z$-pole were
+In Ref.~\cite{Nason:2023asn} only ALEPH data at the $Z$-pole were
 used in the fit. Ref.\cite{Nason:2025qbx}, instead, includes a large data sample from
 various $e^+e^-$ experiments at energies ranging from 22 to 207
 GeV and revisits the treatment of theoretical uncertainties.
@@ -717,7 +719,7 @@ Threshold conditions are matching ingredients in the DGLAP evolution within the 
 F. Ahmadova, R. Gauld
 \end{Namen}
 The theoretical description for scattering processes in which a heavy-flavour hadron is identified are typically based on either a massive or a massless description of the quark fragmentation process. These approaches are applicable at either low- or high-energy scales, and for very simple cases a combination of these methods are possible.
-On-going work in the group also aims to establish a fully differential description of identified hadron production in a general mass variable flavour number scheme. These developments allow for unified description of identified hadron production in complicated scattering processes with jets and identified hadrons.
+On-going work in the group also aims to establish a fully differential description of identified hadron production in a general mass variable flavour number scheme. These developments allow for a unified description of identified hadron production in complicated scattering processes with jets and identified hadrons.
 These advancements will have important implications for LHC measurements involving heavy-flavour jets, where the standard experimental approach of flavour tagging use the kinematics of identified heavy-flavour hadrons to establish the flavour quantum numbers of jets.
 %
 \subsubsection{Tetraquarks}
@@ -734,7 +736,9 @@ We find that the operator mixing effect is crucial to a robust phenomenological 
 \begin{Namen}
 F. Garosi
 \end{Namen}
-In lepton collisions, when the transverse momentum of initial-state radiation (ISR) is much smaller than the energy of the hard scattering, it is possible to factorise the amplitude and introduce a description in terms of PDFs. In particular, the collinear emission of W bosons off a high-energy lepton induces a large neutrino component. In~\citere{Capdevilla:2024ydp} we studied some aspects of the phenomenology of muon neutrino PDF at future high-energy muon colliders. We examined total cross-sections and differential rates for the production of $e\nu_e$ and $W\gamma$, for which the contribution of the $\nu_\mu$ PDF is dominant, offering a potential cross-check for theoretical predictions. As an application to BSM physics, we also considered the charged-current production of two heavy scalar particles. In both $e\nu_e$ and BSM cases, we compared our PDF results with MadGraph5$\_$aMC simulations of the full leading order processes (e.g. $\mu^-\mu^+\to e^-\bar{\nu}_eW^+$) and we identified generation cuts for which the two approaches are compatible. A rigorous comparison between the two approaches needs further theoretical developments in the description of electroweak radiation at high energies and the improvement of PDFs with higher-order corrections.
+In lepton collisions, when the transverse momentum of initial-state radiation (ISR) is much smaller than the energy of the hard scattering, it is possible to factorise the amplitude and introduce a description in terms of PDFs. In particular, the collinear emission of W bosons off a high-energy lepton induces a large neutrino component. In~\citere{Capdevilla:2024ydp} we studied some aspects of the phenomenology of muon neutrino PDF at future high-energy muon colliders. We examined total cross-sections and differential rates for the production of $e\nu_e$ and $W\gamma$, for which the contribution of the $\nu_\mu$ PDF is dominant, offering a potential cross-check for theoretical predictions. As an application to BSM physics, we also considered the charged-current production of two heavy scalar particles. 
+%In both $e\nu_e$ and BSM cases, we compared our PDF results with MadGraph5$\_$aMC simulations of the full leading order processes (e.g. $\mu^-\mu^+\to e^-\bar{\nu}_eW^+$) and we identified generation cuts for which the two approaches are compatible. 
+%A rigorous comparison between the two approaches needs further theoretical developments in the description of electroweak radiation at high energies and the improvement of PDFs with higher-order corrections.
 %
 \printbibliography[heading=subbibliography]
 \end{refsection}
@@ -792,14 +796,14 @@ This suggests to conduct experiments which can probe currently unexplored region
 The Lohengrin experiment is an example of such a proposal~\cite{Bechtle:2024atq} which aims to perform the fixed-target missing momentum based technique to search for dark-sector particles (the ~GeV energy electron beam is provided by the ELSA Accelerator in Bonn).
 A simulation tool (lohengrin++) has been developed jointly at the MPP (with Uni. Bonn) for the scattering of electrons and nuclear targets for both signals of (light) Dark Matter as well as SM background processes. This tool has already played an important role in the detector design (feasibility study) and will continue to be developed as planning for the experiment continues. 
 % RG, probably cut this based on 
-An example of a (differential) Signal-to-Background study for a 10~MeV Dark Photon produced in the collision of a 3.2~GeV electron beam incident on Tungsten is shown in Fig.~\ref{fig:lohengrin}.
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\linewidth]{plots/SB_Lohengrin.pdf}
-\caption{Differential signal to background ratio as a function of electron kinematics for the production of a $10~{\rm MeV}$ Dark-photon at the hypothetical Lohengrin experiment.}
-\label{fig:lohengrin}
-\end{center}
-\end{figure}
+%An example of a (differential) Signal-to-Background study for a 10~MeV Dark Photon produced in the collision of a 3.2~GeV electron beam incident on Tungsten is shown in Fig.~\ref{fig:lohengrin}.
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width=0.95\linewidth]{plots/SB_Lohengrin.pdf}
+%\caption{Differential signal to background ratio as a function of electron kinematics for the production of a $10~{\rm MeV}$ Dark-photon at the hypothetical Lohengrin experiment.}
+%\label{fig:lohengrin}
+%\end{center}
+%\end{figure}
 
 
 %

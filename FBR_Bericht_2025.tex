@@ -32,14 +32,17 @@
 \onecolumn
 \pdfbookmark[1]{Table of Contents}{table_of_contents}
 \tableofcontents
-\cleardoublepage
+%\cleardoublepage
 
 \twocolumn
 
 % ----------------------------------------------------------------------
 \chapter{Research Activities -- Theory}
 % ----------------------------------------------------------------------
-\section[Novel computational techniques in particle physics and phenomenological applications]{Novel computational techniques in particle physics and phenomenological applications}
+%\section[Novel computational techniques in particle physics and phenomenological applications]{Novel computational techniques in particle physics and phenomenological applications}
+%\section[Novel computational tech\-niques in particle phy\-sics]{Novel computational  tech\-niques in particle phy\-sics}
+\section[Particle physics: Novel computational techniques]{Particle physics: novel computational techniques}
+
 % ----------------------------------------------------------------------
 \begin{Namen}
 Director: Prof. Dr. G. Zanderighi
@@ -81,7 +84,7 @@ However, there has been a substantial progress in achieving next-to-NLO
 (NNLO) event simulations in the past years, much of which has been driven by our research
 group. The \minnlo{} method to match NNLO predictions with parton showers (NNLO+PS)
 was introduced by us in 2019 for $2\to 1$ colour-singlet 
-processes \cite{Monni:2019whf,Monni:2020nks}, generalized to $2\to 2$ reactions 
+processes~\cite{Monni:2019whf,Monni:2020nks}, generalized to $2\to 2$ reactions 
 (and beyond) \cite{Lombardi:2020wju} and even extended to top-quark pair ($t\bar t$) production \cite{Mazzitelli:2020jio,Mazzitelli:2021mmm}. 
 With the latter work, the \minnlo{} method became the first 
 (and still only) NNLO+PS method to deal with colour charges in both the initial and final state.
@@ -191,7 +194,6 @@ in the four-flavour scheme (4FS) \cite{Mazzitelli:2024ura}. With this calculatio
 As can be observed in \fig{fig:bbZ}, the NNLO corrections are substantial and are necessary to describe LHC data.
 
 
-
 \subsubsection{Associated Higgs production with bottom quarks: a flavour-scheme study at NNLO+PS}
 \begin{Namen}
 C. Biello, R. Gauld, A. Sankar, M. Wiesemann, G. Zanderighi
@@ -249,7 +251,7 @@ G. Pelliccioli, M. Wiesemann, G. Zanderighi, S. Zanoli
 \begin{figure}[b!]
 \begin{center}
 \includegraphics[width=0.95\linewidth]{plots/MiNNLO_EW_WZ_mZ.pdf}
-\caption{Dilepton mass in $WZ$ process.}
+\caption{Different matching schemes for the dilepton mass in $WZ$ process.}
 \label{fig:WZ}
 \end{center}
 \end{figure}
@@ -282,7 +284,7 @@ with QED effects to reach NLO EW accuracy for inclusive $WZ$ observables without
 extra jets. This approach is currently developed and tested for the Drell-Yan process.
 
 
-\subsubsection{Polarized NLO+PS predictions and quantum info}
+\subsubsection{Polarized NLO+PS predictions and quantum information}
 \begin{Namen}
 G. Pelliccioli, G. Zanderighi
 \end{Namen}
@@ -293,8 +295,8 @@ sensitivity to new physics.
 %
 Starting from recent developments in polarised-boson simulation based
 on the helicity selection at the amplitude level,
-\citere{Pelliccioli:2023zpd} presents a calcualtion and simulation
-of inclusive diboson processes (WZ, ZZ and WW). A phenomenological
+\citere{Pelliccioli:2023zpd} presents a calculation and simulation
+of inclusive diboson processes ($WZ$, $ZZ$ and $WW$). A phenomenological
 analysis in realistic LHC setups, as well as a comparison with recent
 ATLAS measurements, are presented.
 
@@ -303,7 +305,7 @@ multi-boson processes and in measuring quantum entanglement at high
 energies, \citere{Grossi:2024jae} studies polarisation and
 spin-correlation coefficients in diboson systems. It is shown that
 higher-order corrections of QCD and electroweak type, off-shell
-modelling, and realistic effects such as fiducial selections and
+modeling, and realistic effects such as fiducial selections and
 neutrino reconstruction are unavoidable to properly determine such
 coefficients, and consequently to provide a sound interpretation of
 observables sensitive to quantum entanglement and Bell-inequality
@@ -336,7 +338,9 @@ M. Niggetiedt
 \end{Namen}
 %
 
-Gluon fusion is the predominant channel for the production of a Higgs boson at the LHC. This makes a firm understanding of the process and corresponding observables mandatory for current and future precision Higgs physics. Enormous efforts have been devoted to the precise theoretical description of the total inclusive gluon fusion cross section. It is important to emphasize that in the Standard Model the Higgs boson is the only particle featuring Yukawa interactions with fermions. Therefore, minimizing the associated theory uncertainties is of paramount importance as theory predictions for Higgs observables have a direct impact on the extraction of couplings and masses from experimental measurements.
+Gluon fusion is the dominant channel for the production of a Higgs boson at the LHC. This makes a firm understanding of the process and corresponding observables mandatory for current and future precision Higgs physics. Enormous efforts have been devoted to the precise theoretical description of the total inclusive gluon fusion cross section. 
+
+%It is important to emphasize that in the Standard Model the Higgs boson is the only particle featuring Yukawa interactions with fermions. Therefore, minimizing the associated theory uncertainties is of paramount importance as theory predictions for Higgs observables have a direct impact on the extraction of couplings and masses from experimental measurements.
 
 A comprehensive analysis of the gluon fusion cross section by the LHC Higgs Working Group identified different sources of theory uncertainty which sum up to roughly $6\%$ uncertainty. About one third of this uncertainty is attributed to missing quark-mass effects at NNLO in QCD: a lack of exact knowledge of top quark and bottom quark mass effects at the cross-section level.
 
@@ -354,7 +358,7 @@ M. Niggetiedt, M. Wiesemann
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.95\linewidth]{plots/ptH_diphotons_mass_effect.pdf}
-\caption{Top-mass effect in Higgs $p_T$ spectrum.}
+\caption{Top-mass effects in Higgs $p_T$ spectrum.}
 \label{fig:topmass_Higgs_pT}
 \end{center}
 \end{figure}
@@ -366,7 +370,8 @@ NNLO+PS generator for the loop-induced
 Higgs production process in gluon fusion in the full theory using 
 the \minnlo{} method in \citere{Niggetiedt:2024nmp}. Figure\,\ref{fig:topmass_Higgs_pT} shows
 the crucial importance of top-mass effect in differential Higgs production
-at the example of the Higgs transverse-momentum ($p_T$)
+%at the example of 
+for the Higgs transverse-momentum ($p_T$)
 spectrum by comparing the full theory result (blue solid) against
 the approximation of an infinitely heavy top quark (black, dashed).
 
@@ -378,15 +383,16 @@ our \minnlo{} calculation by the complete dependence on light-quark mass
 effects (bottom and charm) up to NNLO.
 
 %
-\subsubsection{VBF $H\rightarrow b\bar{b}$ production}
+\subsubsection{Vector Boson Fusion Higgs production with decay to  bottom quarks}
 \begin{Namen}
 A. Behring, G. Zanderighi
 \end{Namen}
 Higgs production in vector boson fusion (VBF) is the second most common
-production channel at the LHC. This explains the considerable interest from
-both theorists and experimentalists in precise descriptions of this process.
+production channel at the LHC. 
+%This explains the considerable interest from
+%both theorists and experimentalists in precise descriptions of this process.
 The Higgs decays predominantly to a pair of bottom quarks, making the
-combination of VBF with the $H \to b\bar{b}$ decay channel particularly more
+combination of VBF with the $H \to b\bar{b}$ decay channel particularly 
 interesting.
 
 Following developments where the production \cite{Asteriadis:2021gpd} and decay
@@ -414,14 +420,14 @@ of the decay process. % In particular it is interesting whether a NNLO descripti
 %
 Given the expertise with parton-shower-matched calculation in the group at MPP, it was natural to join forces and combine the NNLO+PS calculation for $H \to b\bar{b}$ decays from \citere{Bizon:2019tfo} with the NNLO description for VBF from \citere{Asteriadis:2021gpd}. This project is currently ongoing.
 
-\subsubsection{Higgs Boson Production in Association with a Top-Antitop Quark at NNLO}
+\subsubsection{Higgs production in association \mbox{with a top-antitop quark at NNLO}}
 \begin{Namen}
  J. Mazzitelli 
 \end{Namen}
 
-The associated production of a Higgs boson with a top-antitop quark pair is a crucial process at the LHC since it allows for a direct measurement of the top-quark Yukawa coupling. Ref.\,\cite{Catani:2022mfv} presents the computation of the radiative corrections to this process at NNLO. This is the very first computation for a $2 \to 3$  process with massive colored particles at this perturbative order. A soft Higgs boson approximation for loop amplitudes is developped, which enables one to reliably quantify the impact of the yet unknown two-loop contribution. It is found that in LHC collisions at the center-of-mass energy $s=13$\,TeV, the NNLO corrections increase the NLO result for the total cross section by about 4\% and lead to a significant reduction of perturbative uncertainties.
+The associated production of a Higgs boson with a top-antitop quark pair is a crucial process at the LHC since it allows for a direct measurement of the top-quark Yukawa coupling. Ref.\,\cite{Catani:2022mfv} presents the computation of the radiative corrections to this process at NNLO. This is the very first computation for a $2 \to 3$  process with massive colored particles at this perturbative order. A soft Higgs boson approximation for loop amplitudes is developed, which enables one to reliably quantify the impact of the yet unknown two-loop contribution. It is found that in LHC collisions at the center-of-mass energy $s=13$\,TeV, the NNLO corrections increase the NLO result for the total cross section by about 4\% and lead to a significant reduction of perturbative uncertainties.
 
-\subsubsection{Di-Higgs production at NNLO+PS}
+\subsubsection{\mbox{Di-Higgs production at NNLO+PS}}
 \begin{Namen}
 F. Garosi, S. Jain, M. Wiesemann, G. Zanderighi
 \end{Namen}
@@ -457,20 +463,21 @@ For some of the considered processes, the precision of the available data from e
 %
 The continued development of theoretical tools and methods is therefore critical to further improve the modelling of the available theory predictions. This remains an active research activity of our group. %, for example: the efficient evaluation of Feynman integrals, towards automation of or going beyond NNLO QCD, the inclusion of quark mass and flavour effects.  
 
-\subsubsection{Reclassifying Feynman Integrals as Special Functions}
+\subsubsection{Reclassifying Feynman integrals as special functions}
 \begin{Namen}
 C. Wang
 \end{Namen}
 %
-The Feynman integral is a central object in the perturbation theory of quantum field theory, and its evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
+%The Feynman integral is a central object in the perturbation theory of quantum field theory, and its evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
+Feynman integrals are central objects in the perturbative descriptions of quantum field theories, and their evaluation is also one of the main sources of difficulties in our quest for even more precise theory predictions.
 Intriguingly, various kinds of special functions in mathematics appear naturally in the computation of Feynman integrals.
-In \citere{Liu:2023jkr}, we proposed a recipe for efficiently evaluating Feynman integrals through the auxiliary mass flow method and differential equations in the kinematic variable space.
+In \citere{Liu:2023jkr}, a recipe for efficiently evaluating Feynman integrals through the auxiliary mass flow method and differential equations in the kinematic variable space is proposed.
 The efficient evaluation method available to Feynman integrals may also serve as a way of exploring the space of special functions.
 These developments have implications in both the theoretical study of amplitudes as well as their evaluation in phenomenological applications.
 
 \subsubsection{Infrared subtraction at NNLO in perturbative QCD}
 \begin{Namen}
-G. Pelliccioli, A. Ratti, C. Signorile-Signorile
+\mbox{G. Pelliccioli, A. Ratti, C. Signorile-Signorile}
 \end{Namen}
 % To achieve reliable theoretical predictions for key QCD processes, it is essential to explore higher orders in perturbation theory. This requires dealing with infrared (IR) singularities that arise from both virtual and real corrections. 
 The treatment of infrared and collinear singularities (IR) remains a key challenge of perturbative QCD calculations at the LHC.
@@ -485,7 +492,7 @@ A key feature of this revised approach is the identification of iterative struct
 enabling significant simplifications in the intermediate steps of the calculations and ameliorating the physical transparency of the results. 
 Although not yet fully general, the approach outlined in these references represents an important milestone toward obtaining finite remainders of the integrated subtraction terms for generic hadron collider processes within the nested soft-collinear subtraction scheme.
 %
-\subsubsection{Soft function at N3LO}
+\subsubsection{Soft function at N$^3$LO}
 \begin{Namen}
 M. Delto, C. Wang
 \end{Namen}
@@ -503,9 +510,10 @@ M. Niggetiedt
 %
 The treatment of the chiral matrix $\gamma_5$ in loop diagrams within dimensional regularization is a well-known technical challenge. Non-anticommuting $\gamma_5$ schemes are commonly used due to their technical ease and the availability of results for necessary renormalization constants. However, the use of a non-anticommuting $\gamma_5$ scheme may break certain symmetry properties of matrix elements or Green's functions giving rise to anomalous terms at the bare level. In order to recover the broken symmetry properties, $\gamma_5$-related symmetry-restoration renormalizations must be applied. 
 
-In our study~\cite{Chen:2024cvu}, we have for the first time calculated the renormalization constant for a pseudoscalar operator regularized with a non-anticommuting $\gamma_5$ in dimensional regularization up to four-loop order in QCD. We have conducted a decomposition of the renormalization constant of the pseudoscalar operator, in order to separate explicitly the component that arises solely from $\gamma_5$-related symmetry-restoration. This facilitates the transformation to other (non-$\overline{\mathrm{MS}}$) renormalization schemes. Exploiting the renormalization-group invariance of the appropriately defined renormalization constant for this operator, we have been able to obtain the corresponding $\overline{\mathrm{MS}}$ factor at five-loop order in QCD. 
+In our study~\cite{Chen:2024cvu}, we have calculated for the first time  the renormalization constant for a pseudoscalar operator regularized with a non-anticommuting $\gamma_5$ in dimensional regularization up to four-loop order in QCD. We have conducted a decomposition of the renormalization constant of the pseudoscalar operator, in order to separate explicitly the component that arises solely from $\gamma_5$-related symmetry-restoration. This facilitates the transformation to other (non-$\overline{\mathrm{MS}}$) renormalization schemes. Exploiting the renormalization-group invariance of the appropriately defined renormalization constant for this operator, we have been able to obtain the corresponding $\overline{\mathrm{MS}}$ factor at five-loop orders in QCD. 
 %
-\subsubsection{The $Q_{1,2}$--$Q_7$ interference contributions to $b \to s \gamma$ at ${\mathcal{O}}(\alpha_s^2)$ for the physical value of $m_c$}
+%\subsubsection{The $Q_{1,2}$--$Q_7$ interference contributions to $b \to s \gamma$ at ${\mathcal{O}}(\alpha_s^2)$ for the physical value of $m_c$}
+\subsubsection{$Q_{1,2}$--$Q_7$ interference contributions to $b \to s \gamma$ at ${\mathcal{O}}(\alpha_s^2)$}
 \begin{Namen}
 M. Niggetiedt
 \end{Namen}
@@ -513,10 +521,11 @@ M. Niggetiedt
 Rare $B$-meson decays provide important constraints on various BSM scenarios. Of particular interest in this context is the inclusive radiative decay $\bar{B}\to X_s\gamma$ which is currently measured with $5\%$ accuracy. %\cite{HeavyFlavorAveragingGroup:2022wzx,ParticleDataGroup:2022pth}. 
 For $E_\gamma > 1.6 \,\mathrm{GeV}$, the $\bar{B}\to X_s\gamma$ decay rate is well approximated by the perturbative decay $b\to X_s^p\gamma$ with $X_s^p = s,sg,sgg,sq\bar{q},\ldots$ as partonic final states. 
 
-In order to match the experimental accuracy, NLO electroweak as well as exact NNLO QCD (${\mathcal{O}}(\alpha_s^2)$) corrections need to be considered. %In previous studies, some of the important NNLO QCD corrections that depend on the mass of the charm quark have only been addressed in the unphysical limit $m_c \gg m_b$ \cite{Misiak:2010sk}, or for a massless charm quark \cite{Czakon:2015exa}. The approximate treatment of charm-quark mass effects induces $3\%$ uncertainty on top of the $3\%$ uncertainty due to missing higher orders and $2.5\%$ due to input parameters and non-perturbative effects. 
+In order to match the experimental accuracy, NLO electroweak as well as exact NNLO QCD %(${\mathcal{O}}(\alpha_s^2)$) 
+corrections need to be considered. %In previous studies, some of the important NNLO QCD corrections that depend on the mass of the charm quark have only been addressed in the unphysical limit $m_c \gg m_b$ \cite{Misiak:2010sk}, or for a massless charm quark \cite{Czakon:2015exa}. The approximate treatment of charm-quark mass effects induces $3\%$ uncertainty on top of the $3\%$ uncertainty due to missing higher orders and $2.5\%$ due to input parameters and non-perturbative effects. 
 %
 %While currently, experimental measurements and theory prediction are in agreement, the ultimate Bell II luminosity will allow for high-statistics measurements pushing the accuracy below $5\%$. This necessitates the elimination of uncertainties due to charm-quark mass effects in theory. 
-In particular, the exact computation of charm mass effects, which currently constitute a dominant source of theory uncertainty of $3\%$, is necessary. This is motivated as the ultimate Belle II luminosity will allow for high-statistics measurements pushing the experimental accuracy below $5\%$
+In particular, the exact computation of charm mass effects, which currently constitute a dominant source of theory uncertainty of $3\%$, is necessary. This is motivated as the ultimate Belle II luminosity will allow for high-statistics measurements pushing the experimental accuracy below $5\%$.
 %
 To this end, we have computed all four-loop Feynman diagrams for the $b \to s \gamma$ transition with massive bottom and charm quarks in the framework of reverse unitarity. Thereby, the calculation has been separated into the evaluation of partial amplitudes with two, three, and four cut propagators. The most challenging contribution involving two cut propagators has been the subject of our work \cite{Czaja:2023ren}. 
 %To deal with the high complexity of the underlying Feynman integrals, we have developed a semi-analytical technique based on differential equations, which allowed us to determine the desired amplitudes at high-precision. 
@@ -524,19 +533,19 @@ To this end, we have computed all four-loop Feynman diagrams for the $b \to s \g
 Our study constitutes a major step towards the full result for the $b \to s \gamma$ decay rate taking into account the exact charm-quark mass dependence at NNLO QCD. Meanwhile, the calculation of contributions with three and four cut propagators has been accomplished and the cancellation of UV and IR divergences when combined with the published results \cite{Czaja:2023ren} has been observed. A complete analysis including contributions from bremsstrahlung is currently in preparation. 
 
 %
-\subsubsection{Z+c-jet at NNLO QCD}
+\subsubsection{Z+c-jet at NNLO in QCD}
 \begin{Namen}
 R. Gauld
 \end{Namen}
 %
-Another avenue of development is fixed-order calculations which take into account the full flavour information of scattering processes, propagated also at the level of (integrated) subtraction terms. Such a development was required for the computation of the process $pp \to Z + c-{\rm~jet}$, as presented in~\citere{Gauld:2023zlv}. 
+Another avenue of development is fixed-order calculations which take into account the full flavour information of scattering processes, propagated also at the level of (integrated) subtraction terms. Such a development was required for the computation of the process $pp \to Z + c-${\rm jet}, as presented in~\citere{Gauld:2023zlv}. 
 %
 This computation furthermore incorporated charm quark mass effects beyond the leading-power, which was achieved combining both massive and massless approaches to describe the scattering process.
 %
 These developments led to substantial improvements in the precision of the theory calculation. At the same time, open questions about the role of multiple-particle-interactions and the definition of jet-flavour in experimental analyses were also raised. % in this work.
 
 
-\subsubsection{Top-mass renormalization in ttbar @ NNLO}
+\subsubsection{Top-mass renormalization in $t\bar t$ at NNLO}
 \begin{Namen}
 J. Mazzitelli
 \end{Namen}
@@ -548,11 +557,11 @@ study of the uncertainties related to the top-quark mass definition up
 to next-to-next-to-leading order (NNLO) in QCD.  NNLO predictions for
 off-shell Higgs boson production in the soft-virtual approximation
 renormalizing the top-quark mass within both the on-shell (OS) and the
-MS schemes are presented. The study shows that the differences between
-the two schemes are sizeable, but the difference is largely reduced
+$\overline{\rm MS}$ schemes are presented. The study shows that the differences between
+the two schemes are sizable, but the difference is largely reduced
 when increasing the order of the perturbative expansion. This work
 also demonstrated explicitly that the convergence of the perturbative
-series in the MS scheme is much better than in the OS one.
+series in the $\overline{\rm MS}$ scheme is much better than in the OS one.
 %
 \printbibliography[heading=subbibliography]
 \end{refsection}
@@ -588,7 +597,7 @@ Even though dijet production is the simplest and best studied QCD reaction in le
 Monte-Carlo predictions for this process do not correspond the current state-of-the-art known
 from hadron colliders. To fill this major gap we have started to develop a NNLO+PS formalism
 derived on basis of the \minnlo{} approach for $e^+e^-\to q\bar q$ production. To this end,
-we have adapted the POWHEG framework to deal with leptons in the inital state and derived
+we have adapted the POWHEG framework to deal with leptons in the initial state and derived
 a \minnlo{} formulation based on the known resummation formulae for event shapes.
 
 An extension of this initial project on dijet production would be to develop NNLO+PS generators
@@ -596,7 +605,7 @@ also for QED corrections for lepton colliders based on collinear factorization, 
 QCD predictions are achieved in hadronic collisions.
 
 
-\subsubsection{Off-shell NLO predictions in tt(+X) processes}
+\subsubsection{Off-shell NLO predictions in $t\bar t(+X)$ processes}
 \begin{Namen}
 G. Pelliccioli
 \end{Namen}
@@ -619,7 +628,7 @@ accurate perturbative predictions.
 %upgrade.
 %
 G.~Zanderighi has been driving and steering progress in reducing this
-uncertainty on three distinct fronts.
+uncertainty on distinct fronts.
 
 She is the theory editor of the section Quantum Chromodynamics
 (QCD) of the Review of the Particle Data Group
@@ -627,9 +636,9 @@ She is the theory editor of the section Quantum Chromodynamics
 which besides providing a summary of the state of the art of QCD
 calculations and comparisons to data, presents an update, very two
 years, the world average of the strong coupling $\alpha_s$. This
-``world'' avarage is taken as reference input in all QCD
+``world'' average is taken as reference input in all QCD
 calculation. A decision on which extraction to include and how to
-compbine them is therefore assessed with greatest care.
+combine them is therefore assessed with greatest care.
 
 %Furthermore, G. Zanderighi has been studying the discrepancy in the
 %determination of $\alpha_s$ from event shapes, where different
@@ -653,7 +662,7 @@ dependence of perturbative and non-perturbative corrections.
 %
 The best fit result is $\alpha_s(M_Z) = 0.1181 \substack{ +0.0002
   \\ -0.0005} \substack{ +0.0018 \\ -0.0021}$, where the first error
-includes experimental uncertianties and the second one includes
+includes experimental uncertainties and the second one includes
 uncertainties associated with scale variation, mass effects, fit
 limits, non-perturbative schemes and non-perturbative uncertainties.
   %
@@ -690,7 +699,7 @@ C. Wang
 %
 In recent years, experimentalists have discovered various exotic hadronic states containing heavy quarks, like $X Y Z$ states and $P_{c}$, beyond the familiar mesons and baryons.
 While the existence of exotic hadronic states has been conjectured since the conception of the quark model, we still have little knowledge of their mass spectra or their production and decay mechanisms.
-In \citere{Wu:2023ntn}, we investigated several hidden-charm tetraquark systems using QCD sum rules and provided a possible explanation of the observed signals.
+In \citere{Wu:2023ntn}, we investigated several hidden-charm tetra-quark systems using QCD sum rules and provided a possible explanation of the observed signals.
 We find that the operator mixing effect is crucial to a robust phenomenological description, highlighting the importance of higher-order corrections in this context.
 %
 \subsubsection{Neutrino content of the muon}
@@ -724,14 +733,14 @@ These studies have been performed in collaboration with members of the independe
 %
 \subsubsection{Polarised NLO+PS predictions in SMEFT}
 \begin{Namen}
-J. Linder, G. Pelliccioli, G. Zanderighi
+U. Haisch, J. Linder, G. Pelliccioli, G. Zanderighi
 \end{Namen}
 %
 Examining the production and leptonic decay of two electroweak bosons (WZ, ZZ, WW) enables the investigation of the spontaneous symmetry-breaking mechanism.
 Quantifying the production rate of especially the longitudinal bosons, is thus a very important indicator for the existence of new physics effects.
 We are currently developing an extension of the polarised diboson code~\cite{Pelliccioli:2023zpd}, incorporating the effects of anomalous triple gauge boson couplings in terms of EFT operators~\cite{Chiesa:2018lcs} while maintaining NLO+PS accuracy.
 %
-\subsubsection{MEM method in Powheg and \minnlo{}}
+\subsubsection{Matrix Element Method in Powheg and \minnlo{}}
 \begin{Namen}
 U. Haisch, J. Linder, M. Wiesemann, G. Zanderighi
 \end{Namen}
@@ -744,7 +753,7 @@ to maximize the signal/background ratio in a cut-based analysis. An important ap
 approach is the determination of the width of the Higgs boson at the LHC.
 
 In its original formulation MEM is defined solely at the level of LO matrix elements. We are currently
-developing an extension of the MEM approach to use NLO+PS predictions within Powheg and,
+developing an extension of the MEM approach to use NLO+PS predictions within POWHEG and,
 as a final goal, NNLO+PS predictions based on \minnlo{}. Our aim is to achieve a more reliable
 determination of the optimal MEM observable.
 %
